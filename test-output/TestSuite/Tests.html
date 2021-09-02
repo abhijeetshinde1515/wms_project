@@ -1,0 +1,242 @@
+<html>
+<head>
+<title>TestNG:  Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 02 15:38:59 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>86 seconds (86462 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.wms.TestHomePage.testTier1UserProfileSection()'><b>testTier1UserProfileSection</b><br>Test class: tests.wms.TestHomePage<br/>
+<a href="#Output-1424788681" onClick='toggleBox("Output-1424788681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1424788681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1424788681">
+STEP - *** Running test method testTier1UserProfileSection...<br/>
+TestNumber - TC_4<br/>
+Coverage - Verifies that Tier 1 user can see user profile from My profile section of Tier 1 Dashboard.<br/>
+CreateDate - 02/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Enter Valid Username, Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
+STEP - Navigate to My Profile Section<br/>
+STEP - Click Link As - My Profile<br/>
+Verified -  - https://wmstest.php.fmv.cc/usersList<br/>
+Verified - https://wmstest.php.fmv.cc/usersList - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/edit-user/612db04fa5313e63ea2c171d<br/>
+Verified - https://wmstest.php.fmv.cc/edit-user/612db04fa5313e63ea2c171d - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/changePassword<br/>
+Verified - https://wmstest.php.fmv.cc/changePassword - OK<br/>
+Verified - Name is Correct<br/>
+Verified - Role is Correct<br/>
+Verified - User Template is Correct<br/>
+Verified - User Email is Correct<br/>
+Verified - User Phone is Correct<br/>
+STEP - STEP - Clicking FREEDOM LOGISTICS to Return On Dashboard Page...<br/>
+STEP - Logging Out Successfully...<br/>
+STEP - My Profile<br/>
+STEP - Logout<br/>
+STEP - Click - Logout<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testTier1UserProfileSection test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>tests.wms.TestHomePage@9a7504c</td></tr>
+<tr>
+<td title='tests.wms.TestHomePage.testCustomerLogIn()'><b>testCustomerLogIn</b><br>Test class: tests.wms.TestHomePage<br/>
+<a href="#Output-520022247" onClick='toggleBox("Output-520022247", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-520022247" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-520022247">
+STEP - *** Running test method testCustomerLogIn...<br/>
+TestNumber - TC_1<br/>
+Coverage - Verifies that a authorised client User can log in and see profile.<br/>
+CreateDate - 01/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Enter blank Username, Set Password and Sign In<br/>
+STEP - Set - <br/>
+STEP - Set - <br/>
+STEP - Click - Sign In<br/>
+Verified - The input is not valid E-mail! - Message is Displayed<br/>
+STEP - Enter Valid Username, blank Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - <br/>
+STEP - Click - Sign In<br/>
+Verified - Please input your Password! - Message is Displayed<br/>
+STEP - Enter Invalid Username, Password and Sign In<br/>
+STEP - Set - abc@test.com<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Your email is invalid - Message is Displayed<br/>
+STEP - Enter Valid Username, Invalid Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - TestPassword<br/>
+STEP - Click - Sign In<br/>
+Verified - Your email address or password is invalid - Message is Displayed<br/>
+STEP - Enter Valid Username, Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testCustomerLogIn test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>tests.wms.TestHomePage@9a7504c</td></tr>
+<tr>
+<td title='tests.wms.TestHomePage.testVerifyTier1DashboardLinks()'><b>testVerifyTier1DashboardLinks</b><br>Test class: tests.wms.TestHomePage<br/>
+<a href="#Output-1787083839" onClick='toggleBox("Output-1787083839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1787083839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1787083839">
+STEP - *** Running test method testVerifyTier1DashboardLinks...<br/>
+TestNumber - TC_3<br/>
+Coverage - Verifies that Tier 1 Dashboard hyperlinks are accessible.<br/>
+CreateDate - 01/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Enter Valid Username, Password and Sign In<br/>
+STEP - Set - abhijeet@elsner.in<br/>
+STEP - Set - Test@123<br/>
+STEP - Click - Sign In<br/>
+Verified - Welcome Automation User! - Welcome Message is Displayed<br/>
+Verified -  - https://wmstest.php.fmv.cc/dashboard<br/>
+Verified - https://wmstest.php.fmv.cc/dashboard - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/site-selection<br/>
+Verified - https://wmstest.php.fmv.cc/site-selection - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/<br/>
+Verified - https://wmstest.php.fmv.cc/ - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/sitesList<br/>
+Verified - https://wmstest.php.fmv.cc/sitesList - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/usersList<br/>
+Verified - https://wmstest.php.fmv.cc/usersList - OK<br/>
+Verified -  - https://wmstest.php.fmv.cc/permissionList<br/>
+Verified - https://wmstest.php.fmv.cc/permissionList - OK<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testVerifyTier1DashboardLinks test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>tests.wms.TestHomePage@9a7504c</td></tr>
+<tr>
+<td title='tests.wms.TestHomePage.testForgotPassword()'><b>testForgotPassword</b><br>Test class: tests.wms.TestHomePage<br/>
+<a href="#Output-912747546" onClick='toggleBox("Output-912747546", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-912747546" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-912747546">
+STEP - *** Running test method testForgotPassword...<br/>
+TestNumber - TC_2<br/>
+Coverage - Verifies that only authenticated user will be able to reset his password using valid email.<br/>
+CreateDate - 01/09/2021<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to WMS Website Home Page.<br/>
+Verified - WMS Website Opened Successfully...<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Navigate to Forgot Password<br/>
+STEP - Click Link As - Forgot Password?<br/>
+Verified - Forgotten Password is Displayed<br/>
+STEP - Enter blank Username and Submit<br/>
+STEP - Set - <br/>
+STEP - Click - Submit<br/>
+Verified - Please input your E-mail! - Message is Displayed<br/>
+STEP - Enter Invalid Username and Submit<br/>
+STEP - Set - abc<br/>
+Verified - The input is not valid E-mail! - Message is Displayed<br/>
+STEP - Navigate Back to Log In<br/>
+STEP - Click Link As - Back to login<br/>
+Verified - Login Page is Displayed<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testForgotPassword test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>tests.wms.TestHomePage@9a7504c</td></tr>
+</table><p>
+</body>
+</html>

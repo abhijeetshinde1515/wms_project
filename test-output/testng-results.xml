@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[STEP - *** Test Suite Tests started ***]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Running test method testCustomerLogIn...]]>
+    </line>
+    <line>
+      <![CDATA[TestNumber - TC_1]]>
+    </line>
+    <line>
+      <![CDATA[Coverage - Verifies that a authorised client User can log in and see profile.]]>
+    </line>
+    <line>
+      <![CDATA[CreateDate - 01/09/2021]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[Verified - WMS Website Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Login Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter blank Username, Set Password and Sign In]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Sign In]]>
+    </line>
+    <line>
+      <![CDATA[Verified - The input is not valid E-mail! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter Valid Username, blank Password and Sign In]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Sign In]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please input your Password! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter Invalid Username, Password and Sign In]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - abc@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Test@123]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Sign In]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Your email is invalid - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter Valid Username, Invalid Password and Sign In]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - TestPassword]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Sign In]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Your email address or password is invalid - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter Valid Username, Password and Sign In]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Test@123]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Sign In]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Executed testCustomerLogIn test successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Running test method testForgotPassword...]]>
+    </line>
+    <line>
+      <![CDATA[TestNumber - TC_2]]>
+    </line>
+    <line>
+      <![CDATA[Coverage - Verifies that only authenticated user will be able to reset his password using valid email.]]>
+    </line>
+    <line>
+      <![CDATA[CreateDate - 01/09/2021]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[Verified - WMS Website Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Login Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to Forgot Password]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click Link As - Forgot Password?]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Forgotten Password is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter blank Username and Submit]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Submit]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please input your E-mail! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter Invalid Username and Submit]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - abc]]>
+    </line>
+    <line>
+      <![CDATA[Verified - The input is not valid E-mail! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate Back to Log In]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click Link As - Back to login]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Login Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Executed testForgotPassword test successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Running test method testTier1UserProfileSection...]]>
+    </line>
+    <line>
+      <![CDATA[TestNumber - TC_4]]>
+    </line>
+    <line>
+      <![CDATA[Coverage - Verifies that Tier 1 user can see user profile from My profile section of Tier 1 Dashboard.]]>
+    </line>
+    <line>
+      <![CDATA[CreateDate - 02/09/2021]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[Verified - WMS Website Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Login Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter Valid Username, Password and Sign In]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Test@123]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Sign In]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to My Profile Section]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click Link As - My Profile]]>
+    </line>
+    <line>
+      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/usersList]]>
+    </line>
+    <line>
+      <![CDATA[Verified - https://wmstest.php.fmv.cc/usersList - OK]]>
+    </line>
+    <line>
+      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/edit-user/612db04fa5313e63ea2c171d]]>
+    </line>
+    <line>
+      <![CDATA[Verified - https://wmstest.php.fmv.cc/edit-user/612db04fa5313e63ea2c171d - OK]]>
+    </line>
+    <line>
+      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/changePassword]]>
+    </line>
+    <line>
+      <![CDATA[Verified - https://wmstest.php.fmv.cc/changePassword - OK]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Name is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Role is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Verified - User Template is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Verified - User Email is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Verified - User Phone is Correct]]>
+    </line>
+    <line>
+      <![CDATA[STEP - STEP - Clicking FREEDOM LOGISTICS to Return On Dashboard Page...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Logging Out Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - My Profile]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Logout]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Logout]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Login Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Executed testTier1UserProfileSection test successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Running test method testVerifyTier1DashboardLinks...]]>
+    </line>
+    <line>
+      <![CDATA[TestNumber - TC_3]]>
+    </line>
+    <line>
+      <![CDATA[Coverage - Verifies that Tier 1 Dashboard hyperlinks are accessible.]]>
+    </line>
+    <line>
+      <![CDATA[CreateDate - 01/09/2021]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[Verified - WMS Website Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Login Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter Valid Username, Password and Sign In]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Test@123]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Sign In]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Verified - https://wmstest.php.fmv.cc/dashboard - OK]]>
+    </line>
+    <line>
+      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/site-selection]]>
+    </line>
+    <line>
+      <![CDATA[Verified - https://wmstest.php.fmv.cc/site-selection - OK]]>
+    </line>
+    <line>
+      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/]]>
+    </line>
+    <line>
+      <![CDATA[Verified - https://wmstest.php.fmv.cc/ - OK]]>
+    </line>
+    <line>
+      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/sitesList]]>
+    </line>
+    <line>
+      <![CDATA[Verified - https://wmstest.php.fmv.cc/sitesList - OK]]>
+    </line>
+    <line>
+      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/usersList]]>
+    </line>
+    <line>
+      <![CDATA[Verified - https://wmstest.php.fmv.cc/usersList - OK]]>
+    </line>
+    <line>
+      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/permissionList]]>
+    </line>
+    <line>
+      <![CDATA[Verified - https://wmstest.php.fmv.cc/permissionList - OK]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Executed testVerifyTier1DashboardLinks test successfully...]]>
+    </line>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="86462" started-at="2021-09-02T15:38:59 IST" finished-at="2021-09-02T15:40:25 IST">
+    <groups>
+    </groups>
+    <test name="Tests" duration-ms="86462" started-at="2021-09-02T15:38:59 IST" finished-at="2021-09-02T15:40:25 IST">
+      <class name="tests.wms.TestHomePage">
+        <test-method status="PASS" signature="testCustomerLogIn()[pri:0, instance:tests.wms.TestHomePage@9a7504c]" name="testCustomerLogIn" duration-ms="37856" started-at="2021-09-02T15:38:59 IST" finished-at="2021-09-02T15:39:37 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - *** Running test method testCustomerLogIn...]]>
+            </line>
+            <line>
+              <![CDATA[TestNumber - TC_1]]>
+            </line>
+            <line>
+              <![CDATA[Coverage - Verifies that a authorised client User can log in and see profile.]]>
+            </line>
+            <line>
+              <![CDATA[CreateDate - 01/09/2021]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[Verified - WMS Website Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Login Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter blank Username, Set Password and Sign In]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Sign In]]>
+            </line>
+            <line>
+              <![CDATA[Verified - The input is not valid E-mail! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter Valid Username, blank Password and Sign In]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Sign In]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please input your Password! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter Invalid Username, Password and Sign In]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - abc@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Test@123]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Sign In]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Your email is invalid - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter Valid Username, Invalid Password and Sign In]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - TestPassword]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Sign In]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Your email address or password is invalid - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter Valid Username, Password and Sign In]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Test@123]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Sign In]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - *** Executed testCustomerLogIn test successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCustomerLogIn -->
+        <test-method status="PASS" signature="testForgotPassword()[pri:0, instance:tests.wms.TestHomePage@9a7504c]" name="testForgotPassword" duration-ms="11502" started-at="2021-09-02T15:39:37 IST" finished-at="2021-09-02T15:39:48 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - *** Running test method testForgotPassword...]]>
+            </line>
+            <line>
+              <![CDATA[TestNumber - TC_2]]>
+            </line>
+            <line>
+              <![CDATA[Coverage - Verifies that only authenticated user will be able to reset his password using valid email.]]>
+            </line>
+            <line>
+              <![CDATA[CreateDate - 01/09/2021]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[Verified - WMS Website Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Login Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to Forgot Password]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click Link As - Forgot Password?]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Forgotten Password is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter blank Username and Submit]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Submit]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please input your E-mail! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter Invalid Username and Submit]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - abc]]>
+            </line>
+            <line>
+              <![CDATA[Verified - The input is not valid E-mail! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate Back to Log In]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click Link As - Back to login]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Login Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - *** Executed testForgotPassword test successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testForgotPassword -->
+        <test-method status="PASS" signature="testTier1UserProfileSection()[pri:0, instance:tests.wms.TestHomePage@9a7504c]" name="testTier1UserProfileSection" duration-ms="16779" started-at="2021-09-02T15:39:48 IST" finished-at="2021-09-02T15:40:05 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - *** Running test method testTier1UserProfileSection...]]>
+            </line>
+            <line>
+              <![CDATA[TestNumber - TC_4]]>
+            </line>
+            <line>
+              <![CDATA[Coverage - Verifies that Tier 1 user can see user profile from My profile section of Tier 1 Dashboard.]]>
+            </line>
+            <line>
+              <![CDATA[CreateDate - 02/09/2021]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[Verified - WMS Website Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Login Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter Valid Username, Password and Sign In]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Test@123]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Sign In]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to My Profile Section]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click Link As - My Profile]]>
+            </line>
+            <line>
+              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/usersList]]>
+            </line>
+            <line>
+              <![CDATA[Verified - https://wmstest.php.fmv.cc/usersList - OK]]>
+            </line>
+            <line>
+              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/edit-user/612db04fa5313e63ea2c171d]]>
+            </line>
+            <line>
+              <![CDATA[Verified - https://wmstest.php.fmv.cc/edit-user/612db04fa5313e63ea2c171d - OK]]>
+            </line>
+            <line>
+              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/changePassword]]>
+            </line>
+            <line>
+              <![CDATA[Verified - https://wmstest.php.fmv.cc/changePassword - OK]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Name is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Role is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Verified - User Template is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Verified - User Email is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Verified - User Phone is Correct]]>
+            </line>
+            <line>
+              <![CDATA[STEP - STEP - Clicking FREEDOM LOGISTICS to Return On Dashboard Page...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Logging Out Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - My Profile]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Logout]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Logout]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Login Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - *** Executed testTier1UserProfileSection test successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testTier1UserProfileSection -->
+        <test-method status="PASS" signature="testVerifyTier1DashboardLinks()[pri:0, instance:tests.wms.TestHomePage@9a7504c]" name="testVerifyTier1DashboardLinks" duration-ms="20264" started-at="2021-09-02T15:40:05 IST" finished-at="2021-09-02T15:40:25 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - *** Running test method testVerifyTier1DashboardLinks...]]>
+            </line>
+            <line>
+              <![CDATA[TestNumber - TC_3]]>
+            </line>
+            <line>
+              <![CDATA[Coverage - Verifies that Tier 1 Dashboard hyperlinks are accessible.]]>
+            </line>
+            <line>
+              <![CDATA[CreateDate - 01/09/2021]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[Verified - WMS Website Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Login Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter Valid Username, Password and Sign In]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Test@123]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Sign In]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Verified - https://wmstest.php.fmv.cc/dashboard - OK]]>
+            </line>
+            <line>
+              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/site-selection]]>
+            </line>
+            <line>
+              <![CDATA[Verified - https://wmstest.php.fmv.cc/site-selection - OK]]>
+            </line>
+            <line>
+              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/]]>
+            </line>
+            <line>
+              <![CDATA[Verified - https://wmstest.php.fmv.cc/ - OK]]>
+            </line>
+            <line>
+              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/sitesList]]>
+            </line>
+            <line>
+              <![CDATA[Verified - https://wmstest.php.fmv.cc/sitesList - OK]]>
+            </line>
+            <line>
+              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/usersList]]>
+            </line>
+            <line>
+              <![CDATA[Verified - https://wmstest.php.fmv.cc/usersList - OK]]>
+            </line>
+            <line>
+              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/permissionList]]>
+            </line>
+            <line>
+              <![CDATA[Verified - https://wmstest.php.fmv.cc/permissionList - OK]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - *** Executed testVerifyTier1DashboardLinks test successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyTier1DashboardLinks -->
+      </class> <!-- tests.wms.TestHomePage -->
+    </test> <!-- Tests -->
+  </suite> <!-- TestSuite -->
+</testng-results>
