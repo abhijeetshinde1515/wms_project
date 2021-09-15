@@ -7,11 +7,11 @@
   </listeners>
   <test thread-count="5" name="Tests(failed)">
     <classes>
-      <class name="tests.wms.DemoTest">
+      <class name="tests.wms.TestSiteManagementSection">
         <methods>
-          <include name="testTier1UserProfileSection"/>
+          <include name="testCreateEditAndDeleteUserFromSiteManagementSection"/>
         </methods>
-      </class> <!-- tests.wms.DemoTest -->
+      </class> <!-- tests.wms.TestSiteManagementSection -->
     </classes>
   </test> <!-- Tests(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

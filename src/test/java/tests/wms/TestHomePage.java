@@ -139,7 +139,7 @@ public class TestHomePage extends TestNGBaseTest {
 		
 		assertTrue(userProfilePage.getName(TestData.user_fullname), "Name is Correct");
 		assertTrue(userProfilePage.getDropDownValue(TestData.userRole), "Role is Correct");
-		assertTrue(userProfilePage.getDropDownValue(TestData.userTemplate), "User Template is Correct");
+		assertTrue(userProfilePage.getDropDownValue("template 1"), "User Template is Correct");
 		assertTrue(userProfilePage.getEmail(TestData.email), "User Email is Correct");
 		assertTrue(userProfilePage.getPhoneNumber(TestData.userPhone), "User Phone is Correct");
 		

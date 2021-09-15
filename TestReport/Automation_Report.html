@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
 <html>
-
 
 <head>
 	<meta charset='utf-8' /> 
@@ -12,832 +10,3458 @@
 	
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
-		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	<link href='https://cdn.rawgit.com/extent-framework/extent-github-cdn/191775216e8ce53c38791eb07a1d2f31d0ae11b5/v3html/css/extent.css' type='text/css' rel='stylesheet' />
 	
 	<title>Automation_Report.html</title>
 
 	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
 	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
 </head>
-
 	<body class='extent dark default hide-overflow '>
 		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
 			<span><i class='material-icons'>desktop_windows</i></span>
 		</div>
-
 <nav>
 	<div class="nav-wrapper">
-		<a href="#!" class="brand-logo blue darken-3">Extent</a>
-
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
-
 		<!-- report name -->
 		<span class='report-name'>Automation_Report.html</span>
-		
 		<!-- report headline -->
 		<span class='report-headline'></span>
-
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
-			<li>
-                <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Thursday, September 02, 2021, 03:38 PM (IST)</span>
-				</a>
-			</li>
-			<li>
-                <a href='#!'>
-                    <span class='label blue darken-3'>3.1.5</span>
-				</a>
-			</li>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Wednesday, September 15, 2021, 12:12 PM (IST)</span>
+			</a>
 		</ul>
 	</div>
-</nav>
-
-		<!-- container -->
+</nav>		<!-- container -->
 		<div class='container'>
-
 <div id='test-view' class='view'>
-				
 	<section id='controls'>
 		<div class='controls grey lighten-4'>
 			<!-- test toggle -->
 			<div class='chip transparent'>
 				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
-					<i class='material-icons'>warning</i> Status
+				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
 			</div>
 			<!-- test toggle -->
-
 			<!-- category toggle -->
 			<!-- category toggle -->
-
 			<!-- clear filters -->
 			<div class='chip transparent hide'>
 				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
-					<i class='material-icons'>close</i> Clear
+				<i class='material-icons'>close</i> Clear
 				</a>
 			</div>
 			<!-- clear filters -->
-
 			<!-- enable dashboard -->
 			<div id='toggle-test-view-charts' class='chip transparent'>
 				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
-					<i class='material-icons'>track_changes</i> Dashboard
+				<i class='material-icons'>track_changes</i> Dashboard
 				</a>
 			</div>
 			<!-- enable dashboard -->
-
 			<!-- search -->
 			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
 				<a href="#" class='search-div'>
-					<i class='material-icons'>search</i> Search
+				<i class='material-icons'>search</i> Search
 				</a>
-
 				<div class='input-field left hide'>
 					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
 				</div>
-				
 			</div>
 			<!-- search -->
 		</div>
 	</section>
-
-
-	<div class='subview-left left'>
-		
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box' style="max-height:94px;">
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>7</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="timeline-chart" class="row nm-v nm-h">
+		<div class="col s12 m12 l12 np-h">
+			<div class="card-panel">
+				<div class='left panel-name'>Timeline (seconds)</div>
+				<div class="chart-box" style="width:98%;max-height:145px;">
+					<canvas id="timeline" height="120"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	<div class='subview-left left'>
 		<div class='view-summary'>
-			<h5>Tests</h5>
 			<ul id='test-collection' class='test-collection'>
-				
-				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>testCustomerLogIn</span>
-						<span class='test-time'>Thursday, September 02, 2021, 03:38 PM (IST)</span>
+						<span class='test-time'>Wednesday, September 15, 2021, 12:12 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Thursday, September 02, 2021, 03:38 PM (IST)</span>
-	<span class='label end-time'>Thursday, September 02, 2021, 03:39 PM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 37s+695ms</span>
+	<span class='label start-time'>Wednesday, September 15, 2021, 12:12 PM (IST)</span>
+	<span class='label end-time'>Wednesday, September 15, 2021, 12:13 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 39s+416ms</span>
 </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:38:59 PM</td>
-					<td class='step-details'>testCustomerLogIn</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:38:59 PM</td>
-					<td class='step-details'>TestNumber - TC_1</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:38:59 PM</td>
-					<td class='step-details'>Coverage - Verifies that a authorised client User can log in and see profile.</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:38:59 PM</td>
-					<td class='step-details'>CreateDate - 01/09/2021</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:38:59 PM</td>
-					<td class='step-details'>STEP - Launch Browser Successfully...</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:02 PM</td>
-					<td class='step-details'>STEP - Navigate to WMS Website Home Page.</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:13 PM</td>
-					<td class='step-details'>Verified - WMS Website Opened Successfully...</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:13 PM</td>
-					<td class='step-details'>Verified - Login Page is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:13 PM</td>
-					<td class='step-details'>STEP - Enter blank Username, Set Password and Sign In</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:13 PM</td>
-					<td class='step-details'>STEP - Set -</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:13 PM</td>
-					<td class='step-details'>STEP - Set -</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:13 PM</td>
-					<td class='step-details'>STEP - Click - Sign In</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:17 PM</td>
-					<td class='step-details'>Verified - The input is not valid E-mail! - Message is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:18 PM</td>
-					<td class='step-details'>STEP - Enter Valid Username, blank Password and Sign In</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:18 PM</td>
-					<td class='step-details'>STEP - Set - abhijeet@elsner.in</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:19 PM</td>
-					<td class='step-details'>STEP - Set -</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:19 PM</td>
-					<td class='step-details'>STEP - Click - Sign In</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:22 PM</td>
-					<td class='step-details'>Verified - Please input your Password! - Message is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:23 PM</td>
-					<td class='step-details'>STEP - Enter Invalid Username, Password and Sign In</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:23 PM</td>
-					<td class='step-details'>STEP - Set - abc@test.com</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:23 PM</td>
-					<td class='step-details'>STEP - Set - Test@123</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:24 PM</td>
-					<td class='step-details'>STEP - Click - Sign In</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:27 PM</td>
-					<td class='step-details'>Verified - Your email is invalid - Message is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:28 PM</td>
-					<td class='step-details'>STEP - Enter Valid Username, Invalid Password and Sign In</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:28 PM</td>
-					<td class='step-details'>STEP - Set - abhijeet@elsner.in</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:28 PM</td>
-					<td class='step-details'>STEP - Set - TestPassword</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:28 PM</td>
-					<td class='step-details'>STEP - Click - Sign In</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:32 PM</td>
-					<td class='step-details'>Verified - Your email address or password is invalid - Message is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:32 PM</td>
-					<td class='step-details'>STEP - Enter Valid Username, Password and Sign In</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:33 PM</td>
-					<td class='step-details'>STEP - Set - abhijeet@elsner.in</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:33 PM</td>
-					<td class='step-details'>STEP - Set - Test@123</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:33 PM</td>
-					<td class='step-details'>STEP - Click - Sign In</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:36 PM</td>
-					<td class='step-details'>Verified - Welcome Automation User! - Welcome Message is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:36 PM</td>
-					<td class='step-details'>STEP - Closing Browser Successfully...</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:37 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:12:59 PM</td>
+				<td class='step-details'>
+						testCustomerLogIn
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:12:59 PM</td>
+				<td class='step-details'>
+						TestNumber - TC_1
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:12:59 PM</td>
+				<td class='step-details'>
+						Coverage - Verifies that a authorised client User can log in and see profile.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:12:59 PM</td>
+				<td class='step-details'>
+						CreateDate - 01/09/2021
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:12:59 PM</td>
+				<td class='step-details'>
+						STEP - Launch Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:01 PM</td>
+				<td class='step-details'>
+						STEP - Navigate to WMS Website Home Page.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:13 PM</td>
+				<td class='step-details'>
+						Verified - WMS Website Opened Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:13 PM</td>
+				<td class='step-details'>
+						Verified - Login Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:13 PM</td>
+				<td class='step-details'>
+						STEP - Enter blank Username, Set Password and Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:13 PM</td>
+				<td class='step-details'>
+						STEP - Set -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:13 PM</td>
+				<td class='step-details'>
+						STEP - Set -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:13 PM</td>
+				<td class='step-details'>
+						STEP - Click - Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:17 PM</td>
+				<td class='step-details'>
+						Verified - The input is not valid E-mail! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:19 PM</td>
+				<td class='step-details'>
+						STEP - Enter Valid Username, blank Password and Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:19 PM</td>
+				<td class='step-details'>
+						STEP - Set - abhijeet@elsner.in
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:19 PM</td>
+				<td class='step-details'>
+						STEP - Set -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:19 PM</td>
+				<td class='step-details'>
+						STEP - Click - Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:22 PM</td>
+				<td class='step-details'>
+						Verified - Please input your Password! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:25 PM</td>
+				<td class='step-details'>
+						STEP - Enter Invalid Username, Password and Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:25 PM</td>
+				<td class='step-details'>
+						STEP - Set - abc@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:25 PM</td>
+				<td class='step-details'>
+						STEP - Set - Test@123
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:25 PM</td>
+				<td class='step-details'>
+						STEP - Click - Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:28 PM</td>
+				<td class='step-details'>
+						Verified - Your email is invalid - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:29 PM</td>
+				<td class='step-details'>
+						STEP - Enter Valid Username, Invalid Password and Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:29 PM</td>
+				<td class='step-details'>
+						STEP - Set - abhijeet@elsner.in
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:30 PM</td>
+				<td class='step-details'>
+						STEP - Set - TestPassword
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:30 PM</td>
+				<td class='step-details'>
+						STEP - Click - Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:33 PM</td>
+				<td class='step-details'>
+						Verified - Your email address or password is invalid - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:34 PM</td>
+				<td class='step-details'>
+						STEP - Enter Valid Username, Password and Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:34 PM</td>
+				<td class='step-details'>
+						STEP - Set - abhijeet@elsner.in
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:34 PM</td>
+				<td class='step-details'>
+						STEP - Set - Test@123
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:34 PM</td>
+				<td class='step-details'>
+						STEP - Click - Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:38 PM</td>
+				<td class='step-details'>
+						Verified - Welcome Automation User! - Welcome Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:38 PM</td>
+				<td class='step-details'>
+						STEP - Closing Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:38 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 					</div>
 				</li>
-				
-				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>testForgotPassword</span>
-						<span class='test-time'>Thursday, September 02, 2021, 03:39 PM (IST)</span>
+						<span class='test-time'>Wednesday, September 15, 2021, 12:13 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Thursday, September 02, 2021, 03:39 PM (IST)</span>
-	<span class='label end-time'>Thursday, September 02, 2021, 03:39 PM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+502ms</span>
+	<span class='label start-time'>Wednesday, September 15, 2021, 12:13 PM (IST)</span>
+	<span class='label end-time'>Wednesday, September 15, 2021, 12:13 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+818ms</span>
 </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:37 PM</td>
-					<td class='step-details'>testForgotPassword</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:37 PM</td>
-					<td class='step-details'>TestNumber - TC_2</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:37 PM</td>
-					<td class='step-details'>Coverage - Verifies that only authenticated user will be able to reset his password using valid email.</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:37 PM</td>
-					<td class='step-details'>CreateDate - 01/09/2021</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:37 PM</td>
-					<td class='step-details'>STEP - Launch Browser Successfully...</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:38 PM</td>
-					<td class='step-details'>STEP - Navigate to WMS Website Home Page.</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:42 PM</td>
-					<td class='step-details'>Verified - WMS Website Opened Successfully...</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:42 PM</td>
-					<td class='step-details'>Verified - Login Page is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:42 PM</td>
-					<td class='step-details'>STEP - Navigate to Forgot Password</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:42 PM</td>
-					<td class='step-details'>STEP - Click Link As - Forgot Password?</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:43 PM</td>
-					<td class='step-details'>Verified - Forgotten Password is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:43 PM</td>
-					<td class='step-details'>STEP - Enter blank Username and Submit</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:43 PM</td>
-					<td class='step-details'>STEP - Set -</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:43 PM</td>
-					<td class='step-details'>STEP - Click - Submit</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:47 PM</td>
-					<td class='step-details'>Verified - Please input your E-mail! - Message is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:47 PM</td>
-					<td class='step-details'>STEP - Enter Invalid Username and Submit</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:47 PM</td>
-					<td class='step-details'>STEP - Set - abc</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:47 PM</td>
-					<td class='step-details'>Verified - The input is not valid E-mail! - Message is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:47 PM</td>
-					<td class='step-details'>STEP - Navigate Back to Log In</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:47 PM</td>
-					<td class='step-details'>STEP - Click Link As - Back to login</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:48 PM</td>
-					<td class='step-details'>Verified - Login Page is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:48 PM</td>
-					<td class='step-details'>STEP - Closing Browser Successfully...</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:48 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:38 PM</td>
+				<td class='step-details'>
+						testForgotPassword
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:38 PM</td>
+				<td class='step-details'>
+						TestNumber - TC_2
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:38 PM</td>
+				<td class='step-details'>
+						Coverage - Verifies that only authenticated user will be able to reset his password using valid email.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:38 PM</td>
+				<td class='step-details'>
+						CreateDate - 01/09/2021
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:38 PM</td>
+				<td class='step-details'>
+						STEP - Launch Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:40 PM</td>
+				<td class='step-details'>
+						STEP - Navigate to WMS Website Home Page.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:46 PM</td>
+				<td class='step-details'>
+						Verified - WMS Website Opened Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:46 PM</td>
+				<td class='step-details'>
+						Verified - Login Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:46 PM</td>
+				<td class='step-details'>
+						STEP - Navigate to Forgot Password
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:46 PM</td>
+				<td class='step-details'>
+						STEP - Click Link As - Forgot Password?
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:47 PM</td>
+				<td class='step-details'>
+						Verified - Forgotten Password is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:47 PM</td>
+				<td class='step-details'>
+						STEP - Enter blank Username and Submit
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:47 PM</td>
+				<td class='step-details'>
+						STEP - Set -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:47 PM</td>
+				<td class='step-details'>
+						STEP - Click - Submit
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:50 PM</td>
+				<td class='step-details'>
+						Verified - Please input your E-mail! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:50 PM</td>
+				<td class='step-details'>
+						STEP - Enter Invalid Username and Submit
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:50 PM</td>
+				<td class='step-details'>
+						STEP - Set - abc
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:51 PM</td>
+				<td class='step-details'>
+						Verified - The input is not valid E-mail! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:51 PM</td>
+				<td class='step-details'>
+						STEP - Navigate Back to Log In
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:51 PM</td>
+				<td class='step-details'>
+						STEP - Click Link As - Back to login
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:51 PM</td>
+				<td class='step-details'>
+						Verified - Login Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:51 PM</td>
+				<td class='step-details'>
+						STEP - Closing Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:52 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 					</div>
 				</li>
-				
-				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>testTier1UserProfileSection</span>
-						<span class='test-time'>Thursday, September 02, 2021, 03:39 PM (IST)</span>
+						<span class='test-time'>Wednesday, September 15, 2021, 12:13 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Thursday, September 02, 2021, 03:39 PM (IST)</span>
-	<span class='label end-time'>Thursday, September 02, 2021, 03:40 PM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+779ms</span>
+	<span class='label start-time'>Wednesday, September 15, 2021, 12:13 PM (IST)</span>
+	<span class='label end-time'>Wednesday, September 15, 2021, 12:14 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 54s+268ms</span>
 </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:48 PM</td>
-					<td class='step-details'>testTier1UserProfileSection</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:48 PM</td>
-					<td class='step-details'>TestNumber - TC_4</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:48 PM</td>
-					<td class='step-details'>Coverage - Verifies that Tier 1 user can see user profile from My profile section of Tier 1 Dashboard.</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:48 PM</td>
-					<td class='step-details'>CreateDate - 02/09/2021</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:48 PM</td>
-					<td class='step-details'>STEP - Launch Browser Successfully...</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:50 PM</td>
-					<td class='step-details'>STEP - Navigate to WMS Website Home Page.</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:54 PM</td>
-					<td class='step-details'>Verified - WMS Website Opened Successfully...</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:54 PM</td>
-					<td class='step-details'>Verified - Login Page is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:54 PM</td>
-					<td class='step-details'>STEP - Enter Valid Username, Password and Sign In</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:54 PM</td>
-					<td class='step-details'>STEP - Set - abhijeet@elsner.in</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:55 PM</td>
-					<td class='step-details'>STEP - Set - Test@123</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:55 PM</td>
-					<td class='step-details'>STEP - Click - Sign In</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:39:58 PM</td>
-					<td class='step-details'>Verified - Welcome Automation User! - Welcome Message is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:58 PM</td>
-					<td class='step-details'>STEP - Navigate to My Profile Section</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:39:58 PM</td>
-					<td class='step-details'>STEP - Click Link As - My Profile</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:00 PM</td>
-					<td class='step-details'>Verified -  - https://wmstest.php.fmv.cc/usersList</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:01 PM</td>
-					<td class='step-details'>Verified - https://wmstest.php.fmv.cc/usersList - OK</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:01 PM</td>
-					<td class='step-details'>Verified -  - https://wmstest.php.fmv.cc/edit-user/612db04fa5313e63ea2c171d</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:02 PM</td>
-					<td class='step-details'>Verified - https://wmstest.php.fmv.cc/edit-user/612db04fa5313e63ea2c171d - OK</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:02 PM</td>
-					<td class='step-details'>Verified -  - https://wmstest.php.fmv.cc/changePassword</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:03 PM</td>
-					<td class='step-details'>Verified - https://wmstest.php.fmv.cc/changePassword - OK</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:03 PM</td>
-					<td class='step-details'>Verified - Name is Correct</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:03 PM</td>
-					<td class='step-details'>Verified - Role is Correct</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:03 PM</td>
-					<td class='step-details'>Verified - User Template is Correct</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:03 PM</td>
-					<td class='step-details'>Verified - User Email is Correct</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:03 PM</td>
-					<td class='step-details'>Verified - User Phone is Correct</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:03 PM</td>
-					<td class='step-details'>STEP - STEP - Clicking FREEDOM LOGISTICS to Return On Dashboard Page...</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:03 PM</td>
-					<td class='step-details'>STEP - Logging Out Successfully...</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:03 PM</td>
-					<td class='step-details'>STEP - My Profile</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:04 PM</td>
-					<td class='step-details'>STEP - Logout</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:04 PM</td>
-					<td class='step-details'>STEP - Click - Logout</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:04 PM</td>
-					<td class='step-details'>Verified - Login Page is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:04 PM</td>
-					<td class='step-details'>STEP - Closing Browser Successfully...</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:05 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:52 PM</td>
+				<td class='step-details'>
+						testTier1UserProfileSection
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:52 PM</td>
+				<td class='step-details'>
+						TestNumber - TC_4
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:52 PM</td>
+				<td class='step-details'>
+						Coverage - Verifies that Tier 1 user can see user profile from My profile section of Tier 1 Dashboard.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:52 PM</td>
+				<td class='step-details'>
+						CreateDate - 02/09/2021
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:52 PM</td>
+				<td class='step-details'>
+						STEP - Launch Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:13:54 PM</td>
+				<td class='step-details'>
+						STEP - Navigate to WMS Website Home Page.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:09 PM</td>
+				<td class='step-details'>
+						Verified - WMS Website Opened Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:09 PM</td>
+				<td class='step-details'>
+						Verified - Login Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:09 PM</td>
+				<td class='step-details'>
+						STEP - Enter Valid Username, Password and Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:09 PM</td>
+				<td class='step-details'>
+						STEP - Set - abhijeet@elsner.in
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:10 PM</td>
+				<td class='step-details'>
+						STEP - Set - Test@123
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:10 PM</td>
+				<td class='step-details'>
+						STEP - Click - Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:13 PM</td>
+				<td class='step-details'>
+						Verified - Welcome Automation User! - Welcome Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:13 PM</td>
+				<td class='step-details'>
+						STEP - Navigate to My Profile Section
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:13 PM</td>
+				<td class='step-details'>
+						STEP - Click Link As - My Profile
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:44 PM</td>
+				<td class='step-details'>
+						Verified - Name is Correct
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:44 PM</td>
+				<td class='step-details'>
+						Verified - Role is Correct
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:44 PM</td>
+				<td class='step-details'>
+						Verified - User Template is Correct
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:44 PM</td>
+				<td class='step-details'>
+						Verified - User Email is Correct
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:44 PM</td>
+				<td class='step-details'>
+						Verified - User Phone is Correct
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:44 PM</td>
+				<td class='step-details'>
+						STEP - STEP - Clicking FREEDOM LOGISTICS to Return On Dashboard Page...
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:44 PM</td>
+				<td class='step-details'>
+						STEP - Logging Out Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:45 PM</td>
+				<td class='step-details'>
+						STEP - My Profile
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:45 PM</td>
+				<td class='step-details'>
+						STEP - Logout
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:45 PM</td>
+				<td class='step-details'>
+						STEP - Click - Logout
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:46 PM</td>
+				<td class='step-details'>
+						Verified - Login Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:46 PM</td>
+				<td class='step-details'>
+						STEP - Closing Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:46 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 					</div>
 				</li>
-				
-				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>testVerifyTier1DashboardLinks</span>
-						<span class='test-time'>Thursday, September 02, 2021, 03:40 PM (IST)</span>
+						<span class='test-time'>Wednesday, September 15, 2021, 12:14 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Thursday, September 02, 2021, 03:40 PM (IST)</span>
-	<span class='label end-time'>Thursday, September 02, 2021, 03:40 PM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+264ms</span>
+	<span class='label start-time'>Wednesday, September 15, 2021, 12:14 PM (IST)</span>
+	<span class='label end-time'>Wednesday, September 15, 2021, 12:15 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+453ms</span>
 </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:05 PM</td>
-					<td class='step-details'>testVerifyTier1DashboardLinks</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:05 PM</td>
-					<td class='step-details'>TestNumber - TC_3</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:05 PM</td>
-					<td class='step-details'>Coverage - Verifies that Tier 1 Dashboard hyperlinks are accessible.</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:05 PM</td>
-					<td class='step-details'>CreateDate - 01/09/2021</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:05 PM</td>
-					<td class='step-details'>STEP - Launch Browser Successfully...</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:06 PM</td>
-					<td class='step-details'>STEP - Navigate to WMS Website Home Page.</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:14 PM</td>
-					<td class='step-details'>Verified - WMS Website Opened Successfully...</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:14 PM</td>
-					<td class='step-details'>Verified - Login Page is Displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:14 PM</td>
-					<td class='step-details'>STEP - Enter Valid Username, Password and Sign In</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:14 PM</td>
-					<td class='step-details'>STEP - Set - abhijeet@elsner.in</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:14 PM</td>
-					<td class='step-details'>STEP - Set - Test@123</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:14 PM</td>
-					<td class='step-details'>STEP - Click - Sign In</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:18 PM</td>
-					<td class='step-details'>Verified - Welcome Automation User! - Welcome Message is Displayed</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:18 PM</td>
-					<td class='step-details'>Verified -  - https://wmstest.php.fmv.cc/dashboard</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:19 PM</td>
-					<td class='step-details'>Verified - https://wmstest.php.fmv.cc/dashboard - OK</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:19 PM</td>
-					<td class='step-details'>Verified -  - https://wmstest.php.fmv.cc/site-selection</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:20 PM</td>
-					<td class='step-details'>Verified - https://wmstest.php.fmv.cc/site-selection - OK</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:20 PM</td>
-					<td class='step-details'>Verified -  - https://wmstest.php.fmv.cc/</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:20 PM</td>
-					<td class='step-details'>Verified - https://wmstest.php.fmv.cc/ - OK</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:21 PM</td>
-					<td class='step-details'>Verified -  - https://wmstest.php.fmv.cc/sitesList</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:23 PM</td>
-					<td class='step-details'>Verified - https://wmstest.php.fmv.cc/sitesList - OK</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:23 PM</td>
-					<td class='step-details'>Verified -  - https://wmstest.php.fmv.cc/usersList</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:24 PM</td>
-					<td class='step-details'>Verified - https://wmstest.php.fmv.cc/usersList - OK</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:24 PM</td>
-					<td class='step-details'>Verified -  - https://wmstest.php.fmv.cc/permissionList</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:25 PM</td>
-					<td class='step-details'>Verified - https://wmstest.php.fmv.cc/permissionList - OK</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:40:25 PM</td>
-					<td class='step-details'>STEP - Closing Browser Successfully...</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:40:25 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:46 PM</td>
+				<td class='step-details'>
+						testVerifyTier1DashboardLinks
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:46 PM</td>
+				<td class='step-details'>
+						TestNumber - TC_3
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:46 PM</td>
+				<td class='step-details'>
+						Coverage - Verifies that Tier 1 Dashboard hyperlinks are accessible.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:46 PM</td>
+				<td class='step-details'>
+						CreateDate - 01/09/2021
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:46 PM</td>
+				<td class='step-details'>
+						STEP - Launch Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:48 PM</td>
+				<td class='step-details'>
+						STEP - Navigate to WMS Website Home Page.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:54 PM</td>
+				<td class='step-details'>
+						Verified - WMS Website Opened Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:55 PM</td>
+				<td class='step-details'>
+						Verified - Login Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:55 PM</td>
+				<td class='step-details'>
+						STEP - Enter Valid Username, Password and Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:55 PM</td>
+				<td class='step-details'>
+						STEP - Set - abhijeet@elsner.in
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:55 PM</td>
+				<td class='step-details'>
+						STEP - Set - Test@123
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:14:55 PM</td>
+				<td class='step-details'>
+						STEP - Click - Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:58 PM</td>
+				<td class='step-details'>
+						Verified - Welcome Automation User! - Welcome Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:58 PM</td>
+				<td class='step-details'>
+						Verified -  - https://wms.php.fmv.cc/dashboard
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:00 PM</td>
+				<td class='step-details'>
+						Verified - https://wms.php.fmv.cc/dashboard - OK
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:00 PM</td>
+				<td class='step-details'>
+						Verified -  - https://wms.php.fmv.cc/site-selection
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:01 PM</td>
+				<td class='step-details'>
+						Verified - https://wms.php.fmv.cc/site-selection - OK
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:01 PM</td>
+				<td class='step-details'>
+						Verified -  - https://wms.php.fmv.cc/
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:02 PM</td>
+				<td class='step-details'>
+						Verified - https://wms.php.fmv.cc/ - OK
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:02 PM</td>
+				<td class='step-details'>
+						Verified -  - https://wms.php.fmv.cc/sitesList
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:04 PM</td>
+				<td class='step-details'>
+						Verified - https://wms.php.fmv.cc/sitesList - OK
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:04 PM</td>
+				<td class='step-details'>
+						Verified -  - https://wms.php.fmv.cc/usersList
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:06 PM</td>
+				<td class='step-details'>
+						Verified - https://wms.php.fmv.cc/usersList - OK
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:06 PM</td>
+				<td class='step-details'>
+						Verified -  - https://wms.php.fmv.cc/permissionList
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:07 PM</td>
+				<td class='step-details'>
+						Verified - https://wms.php.fmv.cc/permissionList - OK
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:07 PM</td>
+				<td class='step-details'>
+						STEP - Closing Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:08 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>testCreateEditAndDeleteUserFromSiteManagementSection</span>
+						<span class='test-time'>Wednesday, September 15, 2021, 12:15 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Wednesday, September 15, 2021, 12:15 PM (IST)</span>
+	<span class='label end-time'>Wednesday, September 15, 2021, 12:16 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 25s+913ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:08 PM</td>
+				<td class='step-details'>
+						testCreateEditAndDeleteUserFromSiteManagementSection
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:08 PM</td>
+				<td class='step-details'>
+						TestNumber - TC_8
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:08 PM</td>
+				<td class='step-details'>
+						Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:08 PM</td>
+				<td class='step-details'>
+						CreateDate - 08/09/2021
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:08 PM</td>
+				<td class='step-details'>
+						STEP - Launch Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:10 PM</td>
+				<td class='step-details'>
+						STEP - Navigate to WMS Website Home Page.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:17 PM</td>
+				<td class='step-details'>
+						Verified - WMS Website Opened Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:17 PM</td>
+				<td class='step-details'>
+						Verified - Login Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:17 PM</td>
+				<td class='step-details'>
+						STEP - Enter Valid Username, Password and Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:17 PM</td>
+				<td class='step-details'>
+						STEP - Set - abhijeet@elsner.in
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:17 PM</td>
+				<td class='step-details'>
+						STEP - Set - Test@123
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:17 PM</td>
+				<td class='step-details'>
+						STEP - Click - Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:21 PM</td>
+				<td class='step-details'>
+						Verified - Welcome Automation User! - Welcome Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:21 PM</td>
+				<td class='step-details'>
+						STEP - Go to Site Management
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:21 PM</td>
+				<td class='step-details'>
+						STEP - Click Link As - Go to Site Management
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:24 PM</td>
+				<td class='step-details'>
+						STEP - Select First Site in List
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:24 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:25 PM</td>
+				<td class='step-details'>
+						STEP - Click - Go
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:25 PM</td>
+				<td class='step-details'>
+						STEP - Click Link As - Site Management
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:28 PM</td>
+				<td class='step-details'>
+						Verified - Users List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:28 PM</td>
+				<td class='step-details'>
+						STEP - Create new user
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:28 PM</td>
+				<td class='step-details'>
+						STEP - Click - Create New User
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:29 PM</td>
+				<td class='step-details'>
+						Verified - CREATE NEW USER Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:29 PM</td>
+				<td class='step-details'>
+						STEP - Create User with Blank Data
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:29 PM</td>
+				<td class='step-details'>
+						STEP - Click - Submit
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:32 PM</td>
+				<td class='step-details'>
+						Verified - Please enter your First name! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:32 PM</td>
+				<td class='step-details'>
+						Verified - Please input your Last name! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:32 PM</td>
+				<td class='step-details'>
+						Verified - Please select the Role! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:33 PM</td>
+				<td class='step-details'>
+						Verified - Please select the Template! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:33 PM</td>
+				<td class='step-details'>
+						Verified - The input is not valid E-mail! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:33 PM</td>
+				<td class='step-details'>
+						Verified - Please enter your Phone Number! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:33 PM</td>
+				<td class='step-details'>
+						Verified - Please enter the shift! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:33 PM</td>
+				<td class='step-details'>
+						STEP - Click - Cancel
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:36 PM</td>
+				<td class='step-details'>
+						Verified - Users List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:36 PM</td>
+				<td class='step-details'>
+						STEP - Create new user
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:36 PM</td>
+				<td class='step-details'>
+						STEP - Click - Create New User
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:37 PM</td>
+				<td class='step-details'>
+						Verified - CREATE NEW USER Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:37 PM</td>
+				<td class='step-details'>
+						STEP - Fill new user create data
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:37 PM</td>
+				<td class='step-details'>
+						STEP - Set - Test_Automation_FirstName
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:37 PM</td>
+				<td class='step-details'>
+						STEP - Set - Test_Automation_LastName
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:38 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:39 PM</td>
+				<td class='step-details'>
+						STEP - Click - Tier1
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:39 PM</td>
+				<td class='step-details'>
+						STEP - Set - email_0915121537187@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:40 PM</td>
+				<td class='step-details'>
+						STEP - Set - 0915121537
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:40 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:40 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:41 PM</td>
+				<td class='step-details'>
+						STEP - Click - Template 1
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:41 PM</td>
+				<td class='step-details'>
+						STEP - Click - Submit
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:44 PM</td>
+				<td class='step-details'>
+						STEP - Validate newly created User Details
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:47 PM</td>
+				<td class='step-details'>
+						Verified - Users List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:47 PM</td>
+				<td class='step-details'>
+						STEP - Searching User using seach text as email_0915121537187@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:47 PM</td>
+				<td class='step-details'>
+						STEP - Set - email_0915121537187@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:48 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:56 PM</td>
+				<td class='step-details'>
+						Verified - Test_Automation_FirstName is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:56 PM</td>
+				<td class='step-details'>
+						Verified - Test_Automation_LastName is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:56 PM</td>
+				<td class='step-details'>
+						Verified - Tier1 Role is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:56 PM</td>
+				<td class='step-details'>
+						Verified - email_0915121537187@test.com is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:56 PM</td>
+				<td class='step-details'>
+						Verified - 0915121537 is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:56 PM</td>
+				<td class='step-details'>
+						Verified - Day Shift is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:56 PM</td>
+				<td class='step-details'>
+						Verified - Template1 is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:56 PM</td>
+				<td class='step-details'>
+						Verified - Active Status is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:56 PM</td>
+				<td class='step-details'>
+						STEP - Edit User Details
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:56 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:58 PM</td>
+				<td class='step-details'>
+						Verified - EDIT PROFILE Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:58 PM</td>
+				<td class='step-details'>
+						STEP - Change User Status as Inactive
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:58 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:15:58 PM</td>
+				<td class='step-details'>
+						STEP - Click - Save
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:01 PM</td>
+				<td class='step-details'>
+						Verified - Please enter note! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:01 PM</td>
+				<td class='step-details'>
+						STEP - Change User Status as Suspended
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:01 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:01 PM</td>
+				<td class='step-details'>
+						STEP - Click - Save
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:04 PM</td>
+				<td class='step-details'>
+						Verified - Please enter note! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:04 PM</td>
+				<td class='step-details'>
+						STEP - Enter Note
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:04 PM</td>
+				<td class='step-details'>
+						STEP - Set - Setting Note before Inactivating account
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:05 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:05 PM</td>
+				<td class='step-details'>
+						STEP - Click - Save
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:08 PM</td>
+				<td class='step-details'>
+						STEP - Validate newly edited User Details
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:11 PM</td>
+				<td class='step-details'>
+						Verified - Users List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:11 PM</td>
+				<td class='step-details'>
+						STEP - Searching User using seach text as email_0915121537187@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:11 PM</td>
+				<td class='step-details'>
+						STEP - Set - email_0915121537187@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:11 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:20 PM</td>
+				<td class='step-details'>
+						Verified - Inactive Status is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:20 PM</td>
+				<td class='step-details'>
+						STEP - Delete newly created user
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:20 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:20 PM</td>
+				<td class='step-details'>
+						STEP - Click - Yes
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:24 PM</td>
+				<td class='step-details'>
+						STEP - Searching User using seach text as email_0915121537187@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:24 PM</td>
+				<td class='step-details'>
+						STEP - Set - email_0915121537187@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:25 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:33 PM</td>
+				<td class='step-details'>
+						Verified - No Data Found Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:33 PM</td>
+				<td class='step-details'>
+						STEP - Closing Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:34 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>testCreateAndDeleteSite</span>
+						<span class='test-time'>Wednesday, September 15, 2021, 12:16 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Wednesday, September 15, 2021, 12:16 PM (IST)</span>
+	<span class='label end-time'>Wednesday, September 15, 2021, 12:18 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 54s+250ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:34 PM</td>
+				<td class='step-details'>
+						testCreateAndDeleteSite
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:34 PM</td>
+				<td class='step-details'>
+						TestNumber - TC_6
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:34 PM</td>
+				<td class='step-details'>
+						Coverage - Verifies that Tier1 User can create and delete site from Site section.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:34 PM</td>
+				<td class='step-details'>
+						CreateDate - 07/09/2021
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:34 PM</td>
+				<td class='step-details'>
+						STEP - Launch Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:35 PM</td>
+				<td class='step-details'>
+						STEP - Navigate to WMS Website Home Page.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:44 PM</td>
+				<td class='step-details'>
+						Verified - WMS Website Opened Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:45 PM</td>
+				<td class='step-details'>
+						Verified - Login Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:45 PM</td>
+				<td class='step-details'>
+						STEP - Enter Valid Username, Password and Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:45 PM</td>
+				<td class='step-details'>
+						STEP - Set - abhijeet@elsner.in
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:45 PM</td>
+				<td class='step-details'>
+						STEP - Set - Test@123
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:45 PM</td>
+				<td class='step-details'>
+						STEP - Click - Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:48 PM</td>
+				<td class='step-details'>
+						Verified - Welcome Automation User! - Welcome Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:48 PM</td>
+				<td class='step-details'>
+						STEP - Go to Manage Users Section
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:48 PM</td>
+				<td class='step-details'>
+						STEP - Open Site Section
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:48 PM</td>
+				<td class='step-details'>
+						STEP - Click - Site
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:51 PM</td>
+				<td class='step-details'>
+						STEP - Open Set-up Site Section
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:52 PM</td>
+				<td class='step-details'>
+						STEP - Click - Set-up Site
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:58 PM</td>
+				<td class='step-details'>
+						Verified - Site List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:58 PM</td>
+				<td class='step-details'>
+						STEP - Create new site
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:58 PM</td>
+				<td class='step-details'>
+						STEP - Click - Create New Site
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:59 PM</td>
+				<td class='step-details'>
+						Verified - CREATE NEW SITE Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:59 PM</td>
+				<td class='step-details'>
+						STEP - Create Site with Blank Data
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:16:59 PM</td>
+				<td class='step-details'>
+						STEP - Click - Submit
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:02 PM</td>
+				<td class='step-details'>
+						Verified - Please enter Site name! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:02 PM</td>
+				<td class='step-details'>
+						Verified - Please enter Site code! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:02 PM</td>
+				<td class='step-details'>
+						Verified - Please enter Street Line 1! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:02 PM</td>
+				<td class='step-details'>
+						Verified - Please enter Street Line 2! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:02 PM</td>
+				<td class='step-details'>
+						Verified - Please enter city name! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:02 PM</td>
+				<td class='step-details'>
+						Verified - Please enter state name! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:02 PM</td>
+				<td class='step-details'>
+						Verified - Please enter country! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:02 PM</td>
+				<td class='step-details'>
+						Verified - Please enter postal code! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:02 PM</td>
+				<td class='step-details'>
+						Verified - Please select the date! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:02 PM</td>
+				<td class='step-details'>
+						Verified - Please select the date! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:03 PM</td>
+				<td class='step-details'>
+						Verified - Please enter company name! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:03 PM</td>
+				<td class='step-details'>
+						Verified - Please enter Name! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:03 PM</td>
+				<td class='step-details'>
+						Verified - Please enter Email! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:03 PM</td>
+				<td class='step-details'>
+						Verified - Please enter Phone number! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:03 PM</td>
+				<td class='step-details'>
+						Verified - Please enter Client Name! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:03 PM</td>
+				<td class='step-details'>
+						Verified - Please enter Client Email! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:03 PM</td>
+				<td class='step-details'>
+						Verified - Please enter Client Phone Number! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:03 PM</td>
+				<td class='step-details'>
+						Verified - Please enter Email! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:04 PM</td>
+				<td class='step-details'>
+						Verified - Please enter Phone number! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:04 PM</td>
+				<td class='step-details'>
+						STEP - Click - Cancel
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:07 PM</td>
+				<td class='step-details'>
+						Verified - Site List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:07 PM</td>
+				<td class='step-details'>
+						STEP - Create new site
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:07 PM</td>
+				<td class='step-details'>
+						STEP - Click - Create New Site
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:07 PM</td>
+				<td class='step-details'>
+						Verified - CREATE NEW SITE Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:07 PM</td>
+				<td class='step-details'>
+						STEP - Fill new site data
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:07 PM</td>
+				<td class='step-details'>
+						STEP - Set - Automation_Site_0915121707586
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:07 PM</td>
+				<td class='step-details'>
+						STEP - Set - Automation_SiteCode_0915121707586
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:08 PM</td>
+				<td class='step-details'>
+						STEP - Set - Line1 Address
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:08 PM</td>
+				<td class='step-details'>
+						STEP - Set - Line2 Address
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:08 PM</td>
+				<td class='step-details'>
+						STEP - Set - Pune City
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:08 PM</td>
+				<td class='step-details'>
+						STEP - Set - Maharashtra State
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:09 PM</td>
+				<td class='step-details'>
+						STEP - Set - INDIA
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:09 PM</td>
+				<td class='step-details'>
+						STEP - Set - 412308
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:09 PM</td>
+				<td class='step-details'>
+						STEP - Set - 2021/09/258
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:09 PM</td>
+				<td class='step-details'>
+						STEP - Set - 2021/09/258
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:10 PM</td>
+				<td class='step-details'>
+						STEP - Set - CompanyName_0915121707586
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:10 PM</td>
+				<td class='step-details'>
+						STEP - Set - OnsiteLead
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:10 PM</td>
+				<td class='step-details'>
+						STEP - Set - email_0915121707586@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:11 PM</td>
+				<td class='step-details'>
+						STEP - Set - 0915121707
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:11 PM</td>
+				<td class='step-details'>
+						STEP - Set - ClientProcurementName
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:11 PM</td>
+				<td class='step-details'>
+						STEP - Set - email_0915121707586@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:11 PM</td>
+				<td class='step-details'>
+						STEP - Set - 0915121707
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:11 PM</td>
+				<td class='step-details'>
+						STEP - Set - AdditionalContactName
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:12 PM</td>
+				<td class='step-details'>
+						STEP - Set - email_0915121707586@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:12 PM</td>
+				<td class='step-details'>
+						STEP - Set - 0915121707
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:12 PM</td>
+				<td class='step-details'>
+						STEP - Set - Admin Role
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:12 PM</td>
+				<td class='step-details'>
+						STEP - Click - Submit
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:15 PM</td>
+				<td class='step-details'>
+						STEP - Validate newly created Site Details
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:19 PM</td>
+				<td class='step-details'>
+						Verified - Site List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:19 PM</td>
+				<td class='step-details'>
+						STEP - Searching User using seach text as Automation_Site_0915121707586
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:19 PM</td>
+				<td class='step-details'>
+						STEP - Set - Automation_Site_0915121707586
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:19 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:27 PM</td>
+				<td class='step-details'>
+						Verified - Automation_Site_0915121707586 is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:27 PM</td>
+				<td class='step-details'>
+						Verified - CompanyName_0915121707586 is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:27 PM</td>
+				<td class='step-details'>
+						Verified - CompanyName_0915121707586 is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:27 PM</td>
+				<td class='step-details'>
+						STEP - Delete newly created site
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:27 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:28 PM</td>
+				<td class='step-details'>
+						STEP - Click - Yes
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:36 PM</td>
+				<td class='step-details'>
+						STEP - Searching User using seach text as Automation_Site_0915121707586
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:36 PM</td>
+				<td class='step-details'>
+						STEP - Set - Automation_Site_0915121707586
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:36 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:45 PM</td>
+				<td class='step-details'>
+						Verified - No Data Found Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:45 PM</td>
+				<td class='step-details'>
+						STEP - Validate deleted site in Deleted Site List Page
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:45 PM</td>
+				<td class='step-details'>
+						STEP - Click - Deleted Sites
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:48 PM</td>
+				<td class='step-details'>
+						Verified - Deleted Site List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:48 PM</td>
+				<td class='step-details'>
+						STEP - Searching User using seach text as Automation_Site_0915121707586
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:48 PM</td>
+				<td class='step-details'>
+						STEP - Set - Automation_Site_0915121707586
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:48 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:57 PM</td>
+				<td class='step-details'>
+						Verified - Automation_Site_0915121707586 is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:57 PM</td>
+				<td class='step-details'>
+						Verified - CompanyName_0915121707586 is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:57 PM</td>
+				<td class='step-details'>
+						Verified - CompanyName_0915121707586 is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:17:57 PM</td>
+				<td class='step-details'>
+						STEP - Navigate back using breadcrumb link as Site List
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:27 PM</td>
+				<td class='step-details'>
+						Verified - Site List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:27 PM</td>
+				<td class='step-details'>
+						STEP - Closing Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:28 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>testCreateEditAndDeleteUserFromManageUserSection</span>
+						<span class='test-time'>Wednesday, September 15, 2021, 12:18 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Wednesday, September 15, 2021, 12:18 PM (IST)</span>
+	<span class='label end-time'>Wednesday, September 15, 2021, 12:19 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 24s+254ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:28 PM</td>
+				<td class='step-details'>
+						testCreateEditAndDeleteUserFromManageUserSection
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:28 PM</td>
+				<td class='step-details'>
+						TestNumber - TC_5
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:28 PM</td>
+				<td class='step-details'>
+						Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:28 PM</td>
+				<td class='step-details'>
+						CreateDate - 03/09/2021
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:28 PM</td>
+				<td class='step-details'>
+						STEP - Launch Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:29 PM</td>
+				<td class='step-details'>
+						STEP - Navigate to WMS Website Home Page.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:36 PM</td>
+				<td class='step-details'>
+						Verified - WMS Website Opened Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:36 PM</td>
+				<td class='step-details'>
+						Verified - Login Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:36 PM</td>
+				<td class='step-details'>
+						STEP - Enter Valid Username, Password and Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:36 PM</td>
+				<td class='step-details'>
+						STEP - Set - abhijeet@elsner.in
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:36 PM</td>
+				<td class='step-details'>
+						STEP - Set - Test@123
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:36 PM</td>
+				<td class='step-details'>
+						STEP - Click - Sign In
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:40 PM</td>
+				<td class='step-details'>
+						Verified - Welcome Automation User! - Welcome Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:40 PM</td>
+				<td class='step-details'>
+						STEP - Go to Manage Users Section
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:40 PM</td>
+				<td class='step-details'>
+						STEP - Open Users Section
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:40 PM</td>
+				<td class='step-details'>
+						STEP - Click - Users
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:43 PM</td>
+				<td class='step-details'>
+						STEP - Open Manage Users Section
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:43 PM</td>
+				<td class='step-details'>
+						STEP - Click - Manage Users
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:49 PM</td>
+				<td class='step-details'>
+						Verified - Users List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:49 PM</td>
+				<td class='step-details'>
+						STEP - Create new user
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:49 PM</td>
+				<td class='step-details'>
+						STEP - Click - Create New User
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:50 PM</td>
+				<td class='step-details'>
+						Verified - CREATE NEW USER Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:50 PM</td>
+				<td class='step-details'>
+						STEP - Create User with Blank Data
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:50 PM</td>
+				<td class='step-details'>
+						STEP - Click - Submit
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:54 PM</td>
+				<td class='step-details'>
+						Verified - Please enter your First name! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:54 PM</td>
+				<td class='step-details'>
+						Verified - Please input your Last name! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:54 PM</td>
+				<td class='step-details'>
+						Verified - Please select the Role! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:54 PM</td>
+				<td class='step-details'>
+						Verified - Please select the Template! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:54 PM</td>
+				<td class='step-details'>
+						Verified - The input is not valid E-mail! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:54 PM</td>
+				<td class='step-details'>
+						Verified - Please enter your Phone Number! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:54 PM</td>
+				<td class='step-details'>
+						Verified - Please enter the shift! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:54 PM</td>
+				<td class='step-details'>
+						STEP - Click - Cancel
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:57 PM</td>
+				<td class='step-details'>
+						Verified - Users List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:57 PM</td>
+				<td class='step-details'>
+						STEP - Create new user
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:57 PM</td>
+				<td class='step-details'>
+						STEP - Click - Create New User
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:58 PM</td>
+				<td class='step-details'>
+						Verified - CREATE NEW USER Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:58 PM</td>
+				<td class='step-details'>
+						STEP - Fill new user create data
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:58 PM</td>
+				<td class='step-details'>
+						STEP - Set - Test_Automation_FirstName
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:58 PM</td>
+				<td class='step-details'>
+						STEP - Set - Test_Automation_LastName
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:58 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:58 PM</td>
+				<td class='step-details'>
+						STEP - Click - Tier1
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:58 PM</td>
+				<td class='step-details'>
+						STEP - Set - email_0915121858126@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:59 PM</td>
+				<td class='step-details'>
+						STEP - Set - 0915121858
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:59 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:59 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:59 PM</td>
+				<td class='step-details'>
+						STEP - Click - Template 1
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:18:59 PM</td>
+				<td class='step-details'>
+						STEP - Click - Submit
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:02 PM</td>
+				<td class='step-details'>
+						STEP - Validate newly created User Details
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:06 PM</td>
+				<td class='step-details'>
+						Verified - Users List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:06 PM</td>
+				<td class='step-details'>
+						STEP - Searching User using seach text as email_0915121858126@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:06 PM</td>
+				<td class='step-details'>
+						STEP - Set - email_0915121858126@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:06 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:14 PM</td>
+				<td class='step-details'>
+						Verified - Test_Automation_FirstName is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:14 PM</td>
+				<td class='step-details'>
+						Verified - Test_Automation_LastName is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:14 PM</td>
+				<td class='step-details'>
+						Verified - Tier1 Role is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:14 PM</td>
+				<td class='step-details'>
+						Verified - email_0915121858126@test.com is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:14 PM</td>
+				<td class='step-details'>
+						Verified - 0915121858 is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:14 PM</td>
+				<td class='step-details'>
+						Verified - Day Shift is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:14 PM</td>
+				<td class='step-details'>
+						Verified - Template1 is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:15 PM</td>
+				<td class='step-details'>
+						Verified - Active Status is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:15 PM</td>
+				<td class='step-details'>
+						STEP - Edit User Details
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:15 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:16 PM</td>
+				<td class='step-details'>
+						Verified - EDIT PROFILE Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:16 PM</td>
+				<td class='step-details'>
+						STEP - Change User Status as Inactive
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:16 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:16 PM</td>
+				<td class='step-details'>
+						STEP - Click - Save
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:19 PM</td>
+				<td class='step-details'>
+						Verified - Please enter note! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:19 PM</td>
+				<td class='step-details'>
+						STEP - Change User Status as Suspended
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:19 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:19 PM</td>
+				<td class='step-details'>
+						STEP - Click - Save
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:22 PM</td>
+				<td class='step-details'>
+						Verified - Please enter note! - Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:22 PM</td>
+				<td class='step-details'>
+						STEP - Enter Note
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:22 PM</td>
+				<td class='step-details'>
+						STEP - Set - Setting Note before Inactivating account
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:23 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:23 PM</td>
+				<td class='step-details'>
+						STEP - Click - Save
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:26 PM</td>
+				<td class='step-details'>
+						STEP - Validate newly edited User Details
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:29 PM</td>
+				<td class='step-details'>
+						Verified - Users List Page is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:29 PM</td>
+				<td class='step-details'>
+						STEP - Searching User using seach text as email_0915121858126@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:29 PM</td>
+				<td class='step-details'>
+						STEP - Set - email_0915121858126@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:29 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:38 PM</td>
+				<td class='step-details'>
+						Verified - Inactive Status is Displayed Successfully
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:38 PM</td>
+				<td class='step-details'>
+						STEP - Delete newly created user
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:38 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:39 PM</td>
+				<td class='step-details'>
+						STEP - Click - Yes
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:43 PM</td>
+				<td class='step-details'>
+						STEP - Searching User using seach text as email_0915121858126@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:43 PM</td>
+				<td class='step-details'>
+						STEP - Set - email_0915121858126@test.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:43 PM</td>
+				<td class='step-details'>
+						STEP - Click -
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:52 PM</td>
+				<td class='step-details'>
+						Verified - No Data Found Message is Displayed
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:19:52 PM</td>
+				<td class='step-details'>
+						STEP - Closing Browser Successfully...
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:52 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</div>
 	<!-- subview left -->
-
 	<div class='subview-right left'>
 		<div class='view-summary'>
 			<h5 class='test-name'></h5>
-
 			<div id='step-filters' class="right">
 				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
 				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
@@ -851,47 +3475,8 @@
 		</div>
 	</div>
 	<!-- subview right -->
-
-
-<div id='test-view-charts' class='subview-full'>
-	<div id='charts-row' class='row nm-v nm-h'>
-		<div class='col s12 m6 l6 np-h'>
-			<div class='card-panel nm-v'>
-				<div class='left panel-name'>Tests</div>
-				<div class='chart-box'>
-					<canvas id='parent-analysis' width='100' height='80'></canvas>
-				</div>
-				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> test(s) passed</span>
-				</div>
-				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
-				</div>
-			</div>
-		</div>
-		
-		<div class='col s12 m6 l6 np-h'>
-			<div class='card-panel nm-v'>
-				<div class='left panel-name'>Steps</div>
-				<div class='chart-box'>
-					<canvas id='child-analysis' width='100' height='80'></canvas>
-				</div>
-				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='39.496%'><span class='strong'>47</span> step(s) passed</span>
-				</div>
-				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='60.504%'>72</span> others
-				</div>
-			</div>
-		</div>
-		
-	</div>
 </div>
-</div>
-<!-- test view -->
-<!-- category view -->
-<!-- exception view -->
-<div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -899,31 +3484,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>119</div>
+					<div class='panel-lead'>0</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Thursday, September 02, 2021, 03:38 PM (IST)</div>
+					<div class='panel-lead'>Wednesday, September 15, 2021, 12:12 PM (IST)</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Thursday, September 02, 2021, 03:40 PM (IST)</div>
+			 		<div class='panel-lead'>Wednesday, September 15, 2021, 12:12 PM (IST)</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 26s+730ms</div>
+					<div class='panel-lead'>0h 0m 0s+0ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -950,13 +3535,11 @@
 	</div>
 </div>
 <!-- dashboard view -->
-<!-- testrunner-logs view -->
-		</div>
+<!-- testrunner-logs view -->		</div>
 		<!-- container -->
-
 		<script>
 			var statusGroup = {
-				passParent: 4,
+				passParent: 7,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -964,13 +3547,14 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 47,
+				passChild: 0,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 72,
+				infoChild: 0,
+				debugChild: 0,
 				exceptionsChild: 0,
 				
 				passGrandChild: 0,
@@ -980,15 +3564,17 @@
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
+				debugGrandChild: 0,
 				exceptionsGrandChild: 0,
 			};
 		</script>
-		
-			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
-		
-		
- 		<script type='text/javascript'>
- 		</script>
+		<script>
+			var timeline = {
+			        "testCustomerLogIn":39.416,"testForgotPassword":13.818,"testTier1UserProfileSection":54.268,"testVerifyTier1DashboardLinks":21.453,"testCreateEditAndDeleteUserFromSiteManagementSection":85.913,"testCreateAndDeleteSite":114.25,"testCreateEditAndDeleteUserFromManageUserSection":84.254
+			};
+		</script>
+		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/master/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+		</script>
 	</body>
-	
 </html>

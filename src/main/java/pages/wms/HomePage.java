@@ -31,7 +31,7 @@ public class HomePage extends CommonPage {
 	@FindBy(css = "div[role='alert']")
 	WebElement alertMessage_by;
 	
-	@FindBy(css = ".error")
+	@FindBy(css = "div.ant-message")
 	WebElement errorMessage_by;
 	
 	/************ actions ****************/

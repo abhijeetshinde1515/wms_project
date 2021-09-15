@@ -23,7 +23,7 @@ public class Tier1DashBoardPage extends HomePage {
 	@FindBy(css = "span.gx-avatar-name")
 	WebElement welcomeMessage_by;
 	
-	@FindBy(css = "span.ant-avatar img")
+	@FindBy(css = "i.icon.icon-chevron-down")
 	WebElement myProfile_by;
 	
 	/************ actions ****************/
@@ -49,6 +49,34 @@ public class Tier1DashBoardPage extends HomePage {
 			}
 		}
 		return new HomePage(driver);
+	}
+	
+	public ManageUsersSectionPage clickOnMenuSection(String menu) {
+		logStep("Open "+menu+" Section");
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("span.ant-menu-title-content")));
+		List<WebElement> listItems = driver.findElements(By.cssSelector("span.ant-menu-title-content"));
+		for (WebElement listItem : listItems) {
+			if(listItem.getText().contains(menu)) {
+				clickUsingJSExecutor(listItem);
+				break;
+			}
+		}
+		return new ManageUsersSectionPage(driver);
+	}
+	
+	public SubMenuSectionPage clickOnSubMenuSection(String menu, String subMenu) {
+		clickOnMenuSection(menu);
+		
+		logStep("Open "+subMenu+" Section");
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("span.ant-menu-title-content a span")));
+		List<WebElement> listItems = driver.findElements(By.cssSelector("span.ant-menu-title-content a span"));
+		for (WebElement listItem : listItems) {
+			if(listItem.getText().contains(subMenu)) {
+				clickUsingJSExecutor(listItem);
+				break;
+			}
+		}
+		return new SubMenuSectionPage(driver);
 	}
 	
 	/************ accessors **************/

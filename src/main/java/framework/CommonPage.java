@@ -2,10 +2,15 @@ package framework;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import com.aventstack.extentreports.Status;
 import pages.wms.Tier1DashBoardPage;
@@ -20,27 +25,36 @@ public class CommonPage extends BaseFragment {
 	}
 	/************ locators ***************/
 	
-	@FindBy(css = ".page-title")
+	@FindBy(css = "div.ant-card-head-title")
 	WebElement pageTitle_by;
 	
-	@FindBy(css = "div.message.success.success.message")
-	WebElement success_message_by;
-
-	@FindBy(css = "div.message.error.error.message")
-	WebElement error_message_by;
+	@FindBy(css = "div[role='alert']")
+	WebElement alertMessage_by;
 	
-	@FindBy(css = "div.message.notice.notice.message")
-	WebElement notice_message_by;
+	@FindBy(css = "button[type='submit']")
+	WebElement submitButton_by;
 	
-	@FindBy(id = "maincontent")
-	WebElement content_by;
+	@FindBy(css = "button[type='button']")
+	WebElement cancelButton_by;
+	
+	@FindBy(css = "div.ant-empty-description")
+	WebElement noDataFound_by;
+	
+	@FindBy(css = "div.breadcrumb a span")
+	WebElement breadCrumbNavigation_by;
 	
 	/************ actions ****************/
-	/************ accessors **************/
 	
-	public boolean getPageContent(String content) {
-		return content_by.getText().contains(content);
+	public void navigateUsingBreadCrumb(String link) {
+		List<WebElement> links = driver.findElements(By.cssSelector("div.breadcrumb a span"));
+		for (WebElement listItem : links)
+			if (listItem.getText().contains(link)) {
+				click(listItem);
+				break;
+			}
 	}
+	
+	/************ accessors **************/
 	
 	public Tier1DashBoardPage clickFreedomLogo() {
 		logStep("STEP - Clicking FREEDOM LOGISTICS to Return On Dashboard Page...");
@@ -48,25 +62,43 @@ public class CommonPage extends BaseFragment {
 		return new Tier1DashBoardPage(driver);
 	}
 	
+	public void clickSubmit() {
+		click(submitButton_by);
+		hardWait(3000);
+	}
+	
+	public void clickCancel() {
+		click(cancelButton_by);
+		hardWait(3000);
+	}
+	
 	/************ validations ************/
 	
-	public boolean isPageTitleDisplayed(String title) {
+	public boolean isSectionPageTitleDisplayed(String title) {
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(pageTitle_by));
 		return pageTitle_by.isDisplayed() && pageTitle_by.getText().contains(title);
 	}
 	
+	public String getAlertMessage() {
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(alertMessage_by));
+		return alertMessage_by.getText();
+	}
 	
-	public boolean isSuccessMessageDisplayed(String message) {
-		return success_message_by.isDisplayed() && success_message_by.getText().contains(message);
+	public boolean getAlertMessages(String alerMessage) {
+		List<WebElement> orders = driver.findElements(By.cssSelector("div[role='alert']"));
+		for (WebElement listItem : orders)
+			if (listItem.getText().contains(alerMessage)) {
+				break;
+			}
+		return true;
+	}
+	
+	public boolean isNoDataFoundMessageDisplayed() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(6000,50)");
+		return noDataFound_by.isDisplayed() && noDataFound_by.getText().contains("No Data");
 	}
 
-	public boolean isErrorMessageDisplayed(String message) {
-		return error_message_by.isDisplayed() && error_message_by.getText().contains(message);
-	}
-	
-	public boolean isNoticeMessageDisplayed(String message) {
-		return notice_message_by.isDisplayed() && notice_message_by.getText().contains(message);
-	}
-	
 	/************* helpers ******************/
 
 	public static void verifyLinks(String linkUrl) {

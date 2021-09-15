@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
     <line>
       <![CDATA[STEP - *** Test Suite Tests started ***]]>
@@ -224,24 +224,6 @@
       <![CDATA[STEP - Click Link As - My Profile]]>
     </line>
     <line>
-      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/usersList]]>
-    </line>
-    <line>
-      <![CDATA[Verified - https://wmstest.php.fmv.cc/usersList - OK]]>
-    </line>
-    <line>
-      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/edit-user/612db04fa5313e63ea2c171d]]>
-    </line>
-    <line>
-      <![CDATA[Verified - https://wmstest.php.fmv.cc/edit-user/612db04fa5313e63ea2c171d - OK]]>
-    </line>
-    <line>
-      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/changePassword]]>
-    </line>
-    <line>
-      <![CDATA[Verified - https://wmstest.php.fmv.cc/changePassword - OK]]>
-    </line>
-    <line>
       <![CDATA[Verified - Name is Correct]]>
     </line>
     <line>
@@ -320,40 +302,40 @@
       <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
     </line>
     <line>
-      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/dashboard]]>
+      <![CDATA[Verified -  - https://wms.php.fmv.cc/dashboard]]>
     </line>
     <line>
-      <![CDATA[Verified - https://wmstest.php.fmv.cc/dashboard - OK]]>
+      <![CDATA[Verified - https://wms.php.fmv.cc/dashboard - OK]]>
     </line>
     <line>
-      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/site-selection]]>
+      <![CDATA[Verified -  - https://wms.php.fmv.cc/site-selection]]>
     </line>
     <line>
-      <![CDATA[Verified - https://wmstest.php.fmv.cc/site-selection - OK]]>
+      <![CDATA[Verified - https://wms.php.fmv.cc/site-selection - OK]]>
     </line>
     <line>
-      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/]]>
+      <![CDATA[Verified -  - https://wms.php.fmv.cc/]]>
     </line>
     <line>
-      <![CDATA[Verified - https://wmstest.php.fmv.cc/ - OK]]>
+      <![CDATA[Verified - https://wms.php.fmv.cc/ - OK]]>
     </line>
     <line>
-      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/sitesList]]>
+      <![CDATA[Verified -  - https://wms.php.fmv.cc/sitesList]]>
     </line>
     <line>
-      <![CDATA[Verified - https://wmstest.php.fmv.cc/sitesList - OK]]>
+      <![CDATA[Verified - https://wms.php.fmv.cc/sitesList - OK]]>
     </line>
     <line>
-      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/usersList]]>
+      <![CDATA[Verified -  - https://wms.php.fmv.cc/usersList]]>
     </line>
     <line>
-      <![CDATA[Verified - https://wmstest.php.fmv.cc/usersList - OK]]>
+      <![CDATA[Verified - https://wms.php.fmv.cc/usersList - OK]]>
     </line>
     <line>
-      <![CDATA[Verified -  - https://wmstest.php.fmv.cc/permissionList]]>
+      <![CDATA[Verified -  - https://wms.php.fmv.cc/permissionList]]>
     </line>
     <line>
-      <![CDATA[Verified - https://wmstest.php.fmv.cc/permissionList - OK]]>
+      <![CDATA[Verified - https://wms.php.fmv.cc/permissionList - OK]]>
     </line>
     <line>
       <![CDATA[STEP - Closing Browser Successfully...]]>
@@ -361,13 +343,1711 @@
     <line>
       <![CDATA[STEP - *** Executed testVerifyTier1DashboardLinks test successfully...]]>
     </line>
+    <line>
+      <![CDATA[STEP - *** Running test method testCreateEditAndDeleteUserFromSiteManagementSection...]]>
+    </line>
+    <line>
+      <![CDATA[TestNumber - TC_8]]>
+    </line>
+    <line>
+      <![CDATA[Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.]]>
+    </line>
+    <line>
+      <![CDATA[CreateDate - 08/09/2021]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[Verified - WMS Website Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Login Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter Valid Username, Password and Sign In]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Test@123]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Sign In]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Go to Site Management]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click Link As - Go to Site Management]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Select First Site in List]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Go]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click Link As - Site Management]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Users List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Create new user]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Create New User]]>
+    </line>
+    <line>
+      <![CDATA[Verified - CREATE NEW USER Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Create User with Blank Data]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Submit]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter your First name! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please input your Last name! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please select the Role! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please select the Template! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - The input is not valid E-mail! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter your Phone Number! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter the shift! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Cancel]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Users List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Create new user]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Create New User]]>
+    </line>
+    <line>
+      <![CDATA[Verified - CREATE NEW USER Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Fill new user create data]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Test_Automation_FirstName]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Test_Automation_LastName]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Tier1]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0915121537187@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 0915121537]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Template 1]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Submit]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Validate newly created User Details]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Users List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Searching User using seach text as email_0915121537187@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0915121537187@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Test_Automation_FirstName is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Test_Automation_LastName is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Tier1 Role is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - email_0915121537187@test.com is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - 0915121537 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Day Shift is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Template1 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Active Status is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Edit User Details]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - EDIT PROFILE Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Change User Status as Inactive]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Save]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter note! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Change User Status as Suspended]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Save]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter note! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter Note]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Setting Note before Inactivating account]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Save]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Validate newly edited User Details]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Users List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Searching User using seach text as email_0915121537187@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0915121537187@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Inactive Status is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Delete newly created user]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Yes]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Searching User using seach text as email_0915121537187@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0915121537187@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - No Data Found Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Executed testCreateEditAndDeleteUserFromSiteManagementSection test successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Running test method testCreateAndDeleteSite...]]>
+    </line>
+    <line>
+      <![CDATA[TestNumber - TC_6]]>
+    </line>
+    <line>
+      <![CDATA[Coverage - Verifies that Tier1 User can create and delete site from Site section.]]>
+    </line>
+    <line>
+      <![CDATA[CreateDate - 07/09/2021]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[Verified - WMS Website Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Login Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter Valid Username, Password and Sign In]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Test@123]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Sign In]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Go to Manage Users Section]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Open Site Section]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Site]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Open Set-up Site Section]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Set-up Site]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Site List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Create new site]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Create New Site]]>
+    </line>
+    <line>
+      <![CDATA[Verified - CREATE NEW SITE Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Create Site with Blank Data]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Submit]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter Site name! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter Site code! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter Street Line 1! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter Street Line 2! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter city name! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter state name! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter country! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter postal code! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please select the date! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please select the date! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter company name! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter Name! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter Email! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter Phone number! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter Client Name! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter Client Email! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter Client Phone Number! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter Email! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter Phone number! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Cancel]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Site List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Create new site]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Create New Site]]>
+    </line>
+    <line>
+      <![CDATA[Verified - CREATE NEW SITE Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Fill new site data]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Automation_Site_0915121707586]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Automation_SiteCode_0915121707586]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Line1 Address]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Line2 Address]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Pune City]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Maharashtra State]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - INDIA]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 412308]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 2021/09/258]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 2021/09/258]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - CompanyName_0915121707586]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - OnsiteLead]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0915121707586@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 0915121707]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - ClientProcurementName]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0915121707586@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 0915121707]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - AdditionalContactName]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0915121707586@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 0915121707]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Admin Role]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Submit]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Validate newly created Site Details]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Site List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Searching User using seach text as Automation_Site_0915121707586]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Automation_Site_0915121707586]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Automation_Site_0915121707586 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - CompanyName_0915121707586 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - CompanyName_0915121707586 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Delete newly created site]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Yes]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Searching User using seach text as Automation_Site_0915121707586]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Automation_Site_0915121707586]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - No Data Found Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Validate deleted site in Deleted Site List Page]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Deleted Sites]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Deleted Site List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Searching User using seach text as Automation_Site_0915121707586]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Automation_Site_0915121707586]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Automation_Site_0915121707586 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - CompanyName_0915121707586 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - CompanyName_0915121707586 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate back using breadcrumb link as Site List]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Site List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Executed testCreateAndDeleteSite test successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Running test method testCreateEditAndDeleteUserFromManageUserSection...]]>
+    </line>
+    <line>
+      <![CDATA[TestNumber - TC_5]]>
+    </line>
+    <line>
+      <![CDATA[Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.]]>
+    </line>
+    <line>
+      <![CDATA[CreateDate - 03/09/2021]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[Verified - WMS Website Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Login Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter Valid Username, Password and Sign In]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Test@123]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Sign In]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Go to Manage Users Section]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Open Users Section]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Users]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Open Manage Users Section]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Manage Users]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Users List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Create new user]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Create New User]]>
+    </line>
+    <line>
+      <![CDATA[Verified - CREATE NEW USER Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Create User with Blank Data]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Submit]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter your First name! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please input your Last name! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please select the Role! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please select the Template! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - The input is not valid E-mail! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter your Phone Number! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter the shift! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Cancel]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Users List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Create new user]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Create New User]]>
+    </line>
+    <line>
+      <![CDATA[Verified - CREATE NEW USER Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Fill new user create data]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Test_Automation_FirstName]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Test_Automation_LastName]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Tier1]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0915121858126@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - 0915121858]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Template 1]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Submit]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Validate newly created User Details]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Users List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Searching User using seach text as email_0915121858126@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0915121858126@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Test_Automation_FirstName is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Test_Automation_LastName is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Tier1 Role is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - email_0915121858126@test.com is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - 0915121858 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Day Shift is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Template1 is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Active Status is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Edit User Details]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - EDIT PROFILE Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Change User Status as Inactive]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Save]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter note! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Change User Status as Suspended]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Save]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Please enter note! - Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Enter Note]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - Setting Note before Inactivating account]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Save]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Validate newly edited User Details]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Users List Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Searching User using seach text as email_0915121858126@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0915121858126@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Inactive Status is Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Delete newly created user]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - Yes]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Searching User using seach text as email_0915121858126@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Set - email_0915121858126@test.com]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Verified - No Data Found Message is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - *** Executed testCreateEditAndDeleteUserFromManageUserSection test successfully...]]>
+    </line>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="86462" started-at="2021-09-02T15:38:59 IST" finished-at="2021-09-02T15:40:25 IST">
+  <suite name="TestSuite" duration-ms="413590" started-at="2021-09-15T12:12:59 IST" finished-at="2021-09-15T12:19:52 IST">
     <groups>
     </groups>
-    <test name="Tests" duration-ms="86462" started-at="2021-09-02T15:38:59 IST" finished-at="2021-09-02T15:40:25 IST">
+    <test name="Tests" duration-ms="413590" started-at="2021-09-15T12:12:59 IST" finished-at="2021-09-15T12:19:52 IST">
+      <class name="tests.wms.TestSiteManagementSection">
+        <test-method status="PASS" signature="testCreateEditAndDeleteUserFromSiteManagementSection()[pri:0, instance:tests.wms.TestSiteManagementSection@42eca56e]" name="testCreateEditAndDeleteUserFromSiteManagementSection" duration-ms="85908" started-at="2021-09-15T12:15:08 IST" finished-at="2021-09-15T12:16:34 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - *** Running test method testCreateEditAndDeleteUserFromSiteManagementSection...]]>
+            </line>
+            <line>
+              <![CDATA[TestNumber - TC_8]]>
+            </line>
+            <line>
+              <![CDATA[Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.]]>
+            </line>
+            <line>
+              <![CDATA[CreateDate - 08/09/2021]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[Verified - WMS Website Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Login Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter Valid Username, Password and Sign In]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Test@123]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Sign In]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Go to Site Management]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click Link As - Go to Site Management]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Select First Site in List]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Go]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click Link As - Site Management]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Users List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Create new user]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Create New User]]>
+            </line>
+            <line>
+              <![CDATA[Verified - CREATE NEW USER Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Create User with Blank Data]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Submit]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter your First name! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please input your Last name! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please select the Role! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please select the Template! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - The input is not valid E-mail! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter your Phone Number! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter the shift! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Cancel]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Users List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Create new user]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Create New User]]>
+            </line>
+            <line>
+              <![CDATA[Verified - CREATE NEW USER Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Fill new user create data]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Test_Automation_FirstName]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Test_Automation_LastName]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Tier1]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0915121537187@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 0915121537]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Template 1]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Submit]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Validate newly created User Details]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Users List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Searching User using seach text as email_0915121537187@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0915121537187@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Test_Automation_FirstName is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Test_Automation_LastName is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Tier1 Role is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - email_0915121537187@test.com is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - 0915121537 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Day Shift is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Template1 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Active Status is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Edit User Details]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - EDIT PROFILE Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Change User Status as Inactive]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Save]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter note! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Change User Status as Suspended]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Save]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter note! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter Note]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Setting Note before Inactivating account]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Save]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Validate newly edited User Details]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Users List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Searching User using seach text as email_0915121537187@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0915121537187@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Inactive Status is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Delete newly created user]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Yes]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Searching User using seach text as email_0915121537187@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0915121537187@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - No Data Found Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - *** Executed testCreateEditAndDeleteUserFromSiteManagementSection test successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCreateEditAndDeleteUserFromSiteManagementSection -->
+      </class> <!-- tests.wms.TestSiteManagementSection -->
+      <class name="tests.wms.TestUsersSection">
+        <test-method status="PASS" signature="testCreateEditAndDeleteUserFromManageUserSection()[pri:0, instance:tests.wms.TestUsersSection@7cbd213e]" name="testCreateEditAndDeleteUserFromManageUserSection" duration-ms="84254" started-at="2021-09-15T12:18:28 IST" finished-at="2021-09-15T12:19:52 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - *** Running test method testCreateEditAndDeleteUserFromManageUserSection...]]>
+            </line>
+            <line>
+              <![CDATA[TestNumber - TC_5]]>
+            </line>
+            <line>
+              <![CDATA[Coverage - Verifies that Tier 1 user can create, edit and delete user from Manage Users Section.]]>
+            </line>
+            <line>
+              <![CDATA[CreateDate - 03/09/2021]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[Verified - WMS Website Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Login Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter Valid Username, Password and Sign In]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Test@123]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Sign In]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Go to Manage Users Section]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Open Users Section]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Users]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Open Manage Users Section]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Manage Users]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Users List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Create new user]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Create New User]]>
+            </line>
+            <line>
+              <![CDATA[Verified - CREATE NEW USER Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Create User with Blank Data]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Submit]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter your First name! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please input your Last name! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please select the Role! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please select the Template! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - The input is not valid E-mail! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter your Phone Number! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter the shift! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Cancel]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Users List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Create new user]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Create New User]]>
+            </line>
+            <line>
+              <![CDATA[Verified - CREATE NEW USER Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Fill new user create data]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Test_Automation_FirstName]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Test_Automation_LastName]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Tier1]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0915121858126@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 0915121858]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Template 1]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Submit]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Validate newly created User Details]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Users List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Searching User using seach text as email_0915121858126@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0915121858126@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Test_Automation_FirstName is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Test_Automation_LastName is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Tier1 Role is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - email_0915121858126@test.com is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - 0915121858 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Day Shift is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Template1 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Active Status is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Edit User Details]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - EDIT PROFILE Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Change User Status as Inactive]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Save]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter note! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Change User Status as Suspended]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Save]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter note! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter Note]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Setting Note before Inactivating account]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Save]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Validate newly edited User Details]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Users List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Searching User using seach text as email_0915121858126@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0915121858126@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Inactive Status is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Delete newly created user]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Yes]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Searching User using seach text as email_0915121858126@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0915121858126@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - No Data Found Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - *** Executed testCreateEditAndDeleteUserFromManageUserSection test successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCreateEditAndDeleteUserFromManageUserSection -->
+      </class> <!-- tests.wms.TestUsersSection -->
+      <class name="tests.wms.TestSiteSection">
+        <test-method status="PASS" signature="testCreateAndDeleteSite()[pri:0, instance:tests.wms.TestSiteSection@52f759d7]" name="testCreateAndDeleteSite" duration-ms="114243" started-at="2021-09-15T12:16:34 IST" finished-at="2021-09-15T12:18:28 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - *** Running test method testCreateAndDeleteSite...]]>
+            </line>
+            <line>
+              <![CDATA[TestNumber - TC_6]]>
+            </line>
+            <line>
+              <![CDATA[Coverage - Verifies that Tier1 User can create and delete site from Site section.]]>
+            </line>
+            <line>
+              <![CDATA[CreateDate - 07/09/2021]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to WMS Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[Verified - WMS Website Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Login Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Enter Valid Username, Password and Sign In]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - abhijeet@elsner.in]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Test@123]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Sign In]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Go to Manage Users Section]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Open Site Section]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Site]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Open Set-up Site Section]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Set-up Site]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Site List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Create new site]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Create New Site]]>
+            </line>
+            <line>
+              <![CDATA[Verified - CREATE NEW SITE Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Create Site with Blank Data]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Submit]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter Site name! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter Site code! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter Street Line 1! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter Street Line 2! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter city name! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter state name! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter country! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter postal code! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please select the date! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please select the date! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter company name! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter Name! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter Email! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter Phone number! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter Client Name! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter Client Email! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter Client Phone Number! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter Email! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Please enter Phone number! - Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Cancel]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Site List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Create new site]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Create New Site]]>
+            </line>
+            <line>
+              <![CDATA[Verified - CREATE NEW SITE Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Fill new site data]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Automation_Site_0915121707586]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Automation_SiteCode_0915121707586]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Line1 Address]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Line2 Address]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Pune City]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Maharashtra State]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - INDIA]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 412308]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 2021/09/258]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 2021/09/258]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - CompanyName_0915121707586]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - OnsiteLead]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0915121707586@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 0915121707]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - ClientProcurementName]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0915121707586@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 0915121707]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - AdditionalContactName]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - email_0915121707586@test.com]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - 0915121707]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Admin Role]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Submit]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Validate newly created Site Details]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Site List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Searching User using seach text as Automation_Site_0915121707586]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Automation_Site_0915121707586]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Automation_Site_0915121707586 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - CompanyName_0915121707586 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - CompanyName_0915121707586 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Delete newly created site]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Yes]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Searching User using seach text as Automation_Site_0915121707586]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Automation_Site_0915121707586]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - No Data Found Message is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Validate deleted site in Deleted Site List Page]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - Deleted Sites]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Deleted Site List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Searching User using seach text as Automation_Site_0915121707586]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Set - Automation_Site_0915121707586]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Automation_Site_0915121707586 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - CompanyName_0915121707586 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verified - CompanyName_0915121707586 is Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate back using breadcrumb link as Site List]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Site List Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - *** Executed testCreateAndDeleteSite test successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCreateAndDeleteSite -->
+      </class> <!-- tests.wms.TestSiteSection -->
       <class name="tests.wms.TestHomePage">
-        <test-method status="PASS" signature="testCustomerLogIn()[pri:0, instance:tests.wms.TestHomePage@9a7504c]" name="testCustomerLogIn" duration-ms="37856" started-at="2021-09-02T15:38:59 IST" finished-at="2021-09-02T15:39:37 IST">
+        <test-method status="PASS" signature="testCustomerLogIn()[pri:0, instance:tests.wms.TestHomePage@74ad1f1f]" name="testCustomerLogIn" duration-ms="39563" started-at="2021-09-15T12:12:59 IST" finished-at="2021-09-15T12:13:38 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - *** Running test method testCustomerLogIn...]]>
@@ -476,7 +2156,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCustomerLogIn -->
-        <test-method status="PASS" signature="testForgotPassword()[pri:0, instance:tests.wms.TestHomePage@9a7504c]" name="testForgotPassword" duration-ms="11502" started-at="2021-09-02T15:39:37 IST" finished-at="2021-09-02T15:39:48 IST">
+        <test-method status="PASS" signature="testForgotPassword()[pri:0, instance:tests.wms.TestHomePage@74ad1f1f]" name="testForgotPassword" duration-ms="13817" started-at="2021-09-15T12:13:38 IST" finished-at="2021-09-15T12:13:52 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - *** Running test method testForgotPassword...]]>
@@ -549,7 +2229,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testForgotPassword -->
-        <test-method status="PASS" signature="testTier1UserProfileSection()[pri:0, instance:tests.wms.TestHomePage@9a7504c]" name="testTier1UserProfileSection" duration-ms="16779" started-at="2021-09-02T15:39:48 IST" finished-at="2021-09-02T15:40:05 IST">
+        <test-method status="PASS" signature="testTier1UserProfileSection()[pri:0, instance:tests.wms.TestHomePage@74ad1f1f]" name="testTier1UserProfileSection" duration-ms="54269" started-at="2021-09-15T12:13:52 IST" finished-at="2021-09-15T12:14:46 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - *** Running test method testTier1UserProfileSection...]]>
@@ -597,24 +2277,6 @@
               <![CDATA[STEP - Click Link As - My Profile]]>
             </line>
             <line>
-              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/usersList]]>
-            </line>
-            <line>
-              <![CDATA[Verified - https://wmstest.php.fmv.cc/usersList - OK]]>
-            </line>
-            <line>
-              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/edit-user/612db04fa5313e63ea2c171d]]>
-            </line>
-            <line>
-              <![CDATA[Verified - https://wmstest.php.fmv.cc/edit-user/612db04fa5313e63ea2c171d - OK]]>
-            </line>
-            <line>
-              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/changePassword]]>
-            </line>
-            <line>
-              <![CDATA[Verified - https://wmstest.php.fmv.cc/changePassword - OK]]>
-            </line>
-            <line>
               <![CDATA[Verified - Name is Correct]]>
             </line>
             <line>
@@ -655,7 +2317,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testTier1UserProfileSection -->
-        <test-method status="PASS" signature="testVerifyTier1DashboardLinks()[pri:0, instance:tests.wms.TestHomePage@9a7504c]" name="testVerifyTier1DashboardLinks" duration-ms="20264" started-at="2021-09-02T15:40:05 IST" finished-at="2021-09-02T15:40:25 IST">
+        <test-method status="PASS" signature="testVerifyTier1DashboardLinks()[pri:0, instance:tests.wms.TestHomePage@74ad1f1f]" name="testVerifyTier1DashboardLinks" duration-ms="21446" started-at="2021-09-15T12:14:46 IST" finished-at="2021-09-15T12:15:08 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - *** Running test method testVerifyTier1DashboardLinks...]]>
@@ -697,40 +2359,40 @@
               <![CDATA[Verified - Welcome Automation User! - Welcome Message is Displayed]]>
             </line>
             <line>
-              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/dashboard]]>
+              <![CDATA[Verified -  - https://wms.php.fmv.cc/dashboard]]>
             </line>
             <line>
-              <![CDATA[Verified - https://wmstest.php.fmv.cc/dashboard - OK]]>
+              <![CDATA[Verified - https://wms.php.fmv.cc/dashboard - OK]]>
             </line>
             <line>
-              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/site-selection]]>
+              <![CDATA[Verified -  - https://wms.php.fmv.cc/site-selection]]>
             </line>
             <line>
-              <![CDATA[Verified - https://wmstest.php.fmv.cc/site-selection - OK]]>
+              <![CDATA[Verified - https://wms.php.fmv.cc/site-selection - OK]]>
             </line>
             <line>
-              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/]]>
+              <![CDATA[Verified -  - https://wms.php.fmv.cc/]]>
             </line>
             <line>
-              <![CDATA[Verified - https://wmstest.php.fmv.cc/ - OK]]>
+              <![CDATA[Verified - https://wms.php.fmv.cc/ - OK]]>
             </line>
             <line>
-              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/sitesList]]>
+              <![CDATA[Verified -  - https://wms.php.fmv.cc/sitesList]]>
             </line>
             <line>
-              <![CDATA[Verified - https://wmstest.php.fmv.cc/sitesList - OK]]>
+              <![CDATA[Verified - https://wms.php.fmv.cc/sitesList - OK]]>
             </line>
             <line>
-              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/usersList]]>
+              <![CDATA[Verified -  - https://wms.php.fmv.cc/usersList]]>
             </line>
             <line>
-              <![CDATA[Verified - https://wmstest.php.fmv.cc/usersList - OK]]>
+              <![CDATA[Verified - https://wms.php.fmv.cc/usersList - OK]]>
             </line>
             <line>
-              <![CDATA[Verified -  - https://wmstest.php.fmv.cc/permissionList]]>
+              <![CDATA[Verified -  - https://wms.php.fmv.cc/permissionList]]>
             </line>
             <line>
-              <![CDATA[Verified - https://wmstest.php.fmv.cc/permissionList - OK]]>
+              <![CDATA[Verified - https://wms.php.fmv.cc/permissionList - OK]]>
             </line>
             <line>
               <![CDATA[STEP - Closing Browser Successfully...]]>
